@@ -32,6 +32,7 @@ export const Navbar = () => {
       zIndex={99}
       top={0}
       overflowX={'clip'}
+      position='sticky'
     >
       <Box w='100%'>
         <Flex

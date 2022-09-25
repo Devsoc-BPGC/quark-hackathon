@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <Flex
       id='home'
-      h='981px'
+      h='800px'
       bgGradient='linear(to-b, #183249, #344158, #2A4A62)'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}
@@ -105,6 +105,7 @@ export const Home = () => {
             w={{ sm: '150px', md: '200px' }}
             mt='25px'
             backgroundColor='#3770FF'
+            colorScheme={'purple'}
           >
             <Image w='25px' h='25px' src={devfolio} mr='2px'></Image>
             <Text

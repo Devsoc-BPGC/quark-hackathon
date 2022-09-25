@@ -4,6 +4,7 @@ import Home from './Components/Home';
 import Footer from './Components/Footer';
 import { Navbar } from './Components/Navbar';
 import About from './Components/About';
+import Stats from './Components/Stats';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Home />
         <About />
+        <Stats />
         <Footer />
       </Box>
     </ChakraProvider>

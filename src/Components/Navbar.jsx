@@ -20,9 +20,9 @@ import asset from './assets/icons/Asset.png';
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const Links = [
-    { text: 'Home', link: '' },
-    { text: 'About', link: '' },
-    { text: 'Stats', link: '' },
+    { text: 'Home', link: '#home' },
+    { text: 'About', link: '#about' },
+    { text: 'Stats', link: '#stats' },
     { text: 'Events', link: '' },
     { text: 'Prizes', link: '' },
     { text: 'Sponsors', link: '' },
@@ -77,10 +77,10 @@ export const Navbar = () => {
               borderStyle='solid'
               borderColor='#EFF8FA'
               borderRadius='100px'
-              _hover={{ cursor: 'pointer', background: "#EFF8FA", color:'tomato' }}
+              _hover={{ cursor: 'pointer', background: "#000"}}
             >
-              <Button backgroundColor='transparent' variant='link'>
-                <Text fontSize='1rem' color='#EFF8FA' fontWeight={'400'} mt="0.4em">
+              <Button backgroundColor='transparent' variant='link' _hover={{ cursor: 'pointer', color: "#000"}}>
+                <Text fontSize='1rem' color='#EFF8FA' fontWeight={'400'} mt="0.4em" _hover={{ cursor: 'pointer'}}>
                   Interested in sponsoring?
                 </Text>
               </Button>
@@ -104,14 +104,15 @@ export const Navbar = () => {
             <HStack spacing={'0.75rem'}>
               <Box
                 w='200px'
-                h='36px'
+                h='40px'
                 border='3px'
                 borderStyle='solid'
                 borderColor='#EFF8FA'
                 borderRadius='100px'
+                _hover={{ cursor: 'pointer', background: "#000"}}
               >
-                <Button backgroundColor='transparent' variant='link'>
-                  <Text fontSize='1rem' color='#EFF8FA'>
+                <Button backgroundColor='transparent' variant='link' _hover={{ cursor: 'pointer', color: "#000"}}>
+                  <Text fontSize='1rem' mt="0.2em" color='#EFF8FA'>
                     Interested in sponsoring?
                   </Text>
                 </Button>

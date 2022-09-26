@@ -28,14 +28,8 @@ export const Navbar = () => {
     { text: 'Sponsors', link: '' },
   ];
   return (
-    <Flex
-      bg='#183249'
-      zIndex={99}
-      top={0}
-      overflowX={'clip'}
-      position='sticky'
-    >
-      <Box w='100%' mt="0.78em">
+    <Flex bg='#183249' zIndex={99} top={0} overflowX={'clip'} position='sticky'>
+      <Box w='100%' mt='0.78em'>
         <Flex
           wrap='wrap'
           justifyContent={'center'}
@@ -47,8 +41,8 @@ export const Navbar = () => {
             spacing='2rem'
             wrap={'wrap'}
             display={{ base: 'none', lg: 'flex' }}
-            mt="0.5em"
-            mb="0.3em"
+            mt='0.5em'
+            mb='0.3em'
           >
             {Links.map(link => {
               return (
@@ -77,10 +71,20 @@ export const Navbar = () => {
               borderStyle='solid'
               borderColor='#EFF8FA'
               borderRadius='100px'
-              _hover={{ cursor: 'pointer', background: "#000"}}
+              _hover={{ cursor: 'pointer', background: '#000' }}
             >
-              <Button backgroundColor='transparent' variant='link' _hover={{ cursor: 'pointer', color: "#000"}}>
-                <Text fontSize='1rem' color='#EFF8FA' fontWeight={'400'} mt="0.4em" _hover={{ cursor: 'pointer'}}>
+              <Button
+                backgroundColor='transparent'
+                variant='link'
+                _hover={{ cursor: 'pointer', color: '#000' }}
+              >
+                <Text
+                  fontSize='1rem'
+                  color='#EFF8FA'
+                  fontWeight={'400'}
+                  mt='0.4em'
+                  _hover={{ cursor: 'pointer' }}
+                >
                   Interested in sponsoring?
                 </Text>
               </Button>
@@ -109,10 +113,14 @@ export const Navbar = () => {
                 borderStyle='solid'
                 borderColor='#EFF8FA'
                 borderRadius='100px'
-                _hover={{ cursor: 'pointer', background: "#000"}}
+                _hover={{ cursor: 'pointer', background: '#000' }}
               >
-                <Button backgroundColor='transparent' variant='link' _hover={{ cursor: 'pointer', color: "#000"}}>
-                  <Text fontSize='1rem' mt="0.2em" color='#EFF8FA'>
+                <Button
+                  backgroundColor='transparent'
+                  variant='link'
+                  _hover={{ cursor: 'pointer', color: '#000' }}
+                >
+                  <Text fontSize='1rem' mt='0.2em' color='#EFF8FA'>
                     Interested in sponsoring?
                   </Text>
                 </Button>

@@ -5,7 +5,8 @@ import Footer from './Components/Footer';
 import { Navbar } from './Components/Navbar';
 import About from './Components/About';
 import Stats from './Components/Stats';
-
+import Faq from './Components/Faq';
+import Prizes from './Components/Prizes';
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -14,6 +15,8 @@ function App() {
         <Home />
         <About />
         <Stats />
+        <Prizes />
+        <Faq />
         <Footer />
       </Box>
     </ChakraProvider>

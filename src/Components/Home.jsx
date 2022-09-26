@@ -130,8 +130,8 @@ export const Home = () => {
           w='100%'
           h={{ md: '350px', lg: '600px' }}
           src={laptop}
-          mt="2em"
-          ms="2em"
+          mt='2em'
+          ms='2em'
         ></Image>
       </Flex>
       <Image

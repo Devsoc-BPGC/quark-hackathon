@@ -71,7 +71,7 @@ const Faq = () => {
     <Flex
       bgColor='#EFF8FA'
       fontSize={{ base: '29px', md: '64px' }}
-      fontWeight={'900'}
+      fontWeight={'700'}
       direction='column'
     >
       <VStack alignItems={'flex-start'}>
@@ -145,7 +145,13 @@ const Faq = () => {
           </VStack>
         </HStack>
       </VStack>
-      <Flex h='525px' fontSize={'16px'} mt={'-2rem'}>
+      <Flex
+        h='2049px'
+        bgColor={'#183249'}
+        fontSize={'16px'}
+        clipPath='ellipse(1028px 75% at bottom center)'
+        mt={0}
+      >
         <VStack
           w='100%'
           bgColor={'#183249'}
@@ -157,30 +163,24 @@ const Faq = () => {
           clipPath='ellipse(2049px 70% at bottom center)'
         >
           <Image src={robotGoose} alt='roboGoose' h='60px' w='45px' />
-          <HStack
-            color='#EFF8FA'
-            fontWeight='400'
-            gap={'1.5rem'}
-            wrap={'wrap'}
-            width={{ base: '320px', md: 'fit-content' }}
-          >
-            <Text>About the hackathon</Text>
-            <Text>Open Source</Text>
-            <Text>Privacy Policy</Text>
-            <Text>Code of Conduct</Text>
+          <HStack color='#EFF8FA' fontWeight='400' gap={'1.5rem'}>
+            <Text _hover={{ cursor: 'pointer' }}>About the hackathon</Text>
+            <Text _hover={{ cursor: 'pointer' }}>Open Source</Text>
+            <Text _hover={{ cursor: 'pointer' }}>Privacy Policy</Text>
+            <Text _hover={{ cursor: 'pointer' }}>Code of Conduct</Text>
           </HStack>
           <HStack gap={'2rem'}>
             <Button variant={'link'}>
-              <Image src={mailIcon} h='25px' w='24px'></Image>
+              <Image src={mailIcon} h='20px' w='24px'></Image>
             </Button>
             <Button variant={'link'}>
-              <Image src={facebook} h='25px' w='21px'></Image>
+              <Image src={facebook} h='21px' w='21px'></Image>
             </Button>
             <Button variant={'link'}>
-              <Image src={twitter} h='25px' w='21px'></Image>
+              <Image src={twitter} h='21px' w='21px'></Image>
             </Button>
             <Button variant={'link'}>
-              <Image src={insta} h='25px' w='22px'></Image>
+              <Image src={insta} h='22px' w='22px'></Image>
             </Button>
           </HStack>
           <InputGroup

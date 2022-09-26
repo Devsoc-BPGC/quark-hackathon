@@ -146,10 +146,10 @@ const Faq = () => {
         </HStack>
       </VStack>
       <Flex
-        h='2049px'
+        h='500px'
         bgColor={'#183249'}
         fontSize={'16px'}
-        clipPath='ellipse(1028px 75% at bottom center)'
+        clipPath='ellipse(2049px 75% at bottom center)'
         mt={0}
       >
         <VStack
@@ -163,7 +163,13 @@ const Faq = () => {
           clipPath='ellipse(2049px 70% at bottom center)'
         >
           <Image src={robotGoose} alt='roboGoose' h='60px' w='45px' />
-          <HStack color='#EFF8FA' fontWeight='400' gap={'1.5rem'}>
+          <HStack
+            color='#EFF8FA'
+            fontWeight='400'
+            gap={'1.5rem'}
+            wrap={'wrap'}
+            w={{ base: '320px', md: 'fit-content' }}
+          >
             <Text _hover={{ cursor: 'pointer' }}>About the hackathon</Text>
             <Text _hover={{ cursor: 'pointer' }}>Open Source</Text>
             <Text _hover={{ cursor: 'pointer' }}>Privacy Policy</Text>
@@ -193,7 +199,6 @@ const Faq = () => {
           >
             <Input
               color={'black'}
-              className='my-input'
               w={{ base: '250px', md: '600px' }}
               display={{ base: 'block', md: 'none' }}
               borderRadius={'100px'}
@@ -215,7 +220,6 @@ const Faq = () => {
             <Input
               color={'black'}
               display={{ base: 'none', md: 'block' }}
-              className='my-input'
               w={{ base: '250px', md: '600px' }}
               borderRadius={'100px'}
               border={0}

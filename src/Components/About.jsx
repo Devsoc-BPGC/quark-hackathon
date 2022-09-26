@@ -27,7 +27,7 @@ const About = () => {
             </Box>
         </Box>
         <Box w="39em">  
-          <Box ms={["14.5em", "14.5em", null]} mt={["-0.8em", "-0.8em", null]} boxSize={"fit-content"} zIndex={-2}>
+          <Box ms={["14.5em", "14.5em", "0.1em"]} mt={["-0.8em", "-0.8em", null]} boxSize={"fit-content"} zIndex={-2}>
             <Image h={["12.8em", "12.8em", "22em"]} w={["12.8em", "12.8em", "22em"]} mt="0" src={bits} mb="0"></Image>
           </Box>  
           <Box mt={["-10.6em", "-10.6em", "-3.6em"]} ms={["4.4em", "3.4em", "14.6em"]} boxSize={"fit-content"} zIndex={-3}>

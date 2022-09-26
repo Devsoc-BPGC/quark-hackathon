@@ -10,7 +10,7 @@ export const Home = () => {
     <Flex
       id='home'
       h='981px'
-      bgGradient='radial(rgba(24, 33, 50, 1),rgba(44, 64, 91, 1))'
+      bgGradient='linear(to-b, #183249, #344158, #2A4A62)'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}
     >
@@ -32,7 +32,7 @@ export const Home = () => {
             <Text
               lineHeight='4.5rem'
               color='#FFFFFF'
-              fontWeight='900'
+              fontWeight='700'
               fontSize={['1.8rem', null, '2.5rem', '4rem']}
               wordBreak='break-word'
             >
@@ -43,7 +43,7 @@ export const Home = () => {
               fontSize={{ base: '0.75rem', md: '1rem' }}
               lineHeight='12px'
               color='#93E5C8'
-              fontWeight='700'
+              fontWeight='500'
             >
               \\Dream Big.
             </Text>
@@ -52,7 +52,7 @@ export const Home = () => {
               fontSize={{ base: '0.75rem', md: '1rem' }}
               lineHeight='24px'
               color='#93E5C8'
-              fontWeight='700'
+              fontWeight='500'
             >
               \\Do{' '}
             </Text>
@@ -61,7 +61,7 @@ export const Home = () => {
               display='inline-block'
               fontSize={{ base: '1rem', md: '1.5rem' }}
               color='#93E5C8'
-              fontWeight='700'
+              fontWeight='500'
             >
               Bigger!
             </Text>
@@ -69,7 +69,7 @@ export const Home = () => {
           <Box mb='10px'>
             <Text
               fontSize={{ base: '0.77rem', md: '1rem' }}
-              fontWeight='900'
+              fontWeight='700'
               color='#FFFFFF'
             >
               Hosted By
@@ -102,7 +102,7 @@ export const Home = () => {
             </Box>
           </Box>
           <Button
-            w={{ sm: '150px', md: '175px' }}
+            w={{ sm: '150px', md: '200px' }}
             mt='25px'
             backgroundColor='#3770FF'
           >
@@ -127,8 +127,10 @@ export const Home = () => {
         <Image
           display={{ base: 'none', md: 'block' }}
           w='100%'
-          h={{ md: '400px', lg: '657px' }}
+          h={{ md: '350px', lg: '600px' }}
           src={laptop}
+          mt='2em'
+          ms='2em'
         ></Image>
       </Flex>
       <Image

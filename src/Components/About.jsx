@@ -28,7 +28,7 @@ const About = () => {
         </Box>
         <Box w="39em">  
           <Box ms={["14.5em", "14.5em", null]} mt={["-0.8em", "-0.8em", null]} boxSize={"fit-content"} zIndex={-2}>
-            <Image h={["12.76em", "12.76em", "22em"]} w={["12.76em", "12.76em", "22em"]} mt="0" src={bits} mb="0"></Image>
+            <Image h={["12.8em", "12.8em", "22em"]} w={["12.8em", "12.8em", "22em"]} mt="0" src={bits} mb="0"></Image>
           </Box>  
           <Box mt={["-10.6em", "-10.6em", "-3.6em"]} ms={["4.4em", "3.4em", "14.6em"]} boxSize={"fit-content"} zIndex={-3}>
             <Image h={["7em", "7em", "10em"]} w={["7em", "7em", "10em"]} src={heli} mb="auto" ms="1em"></Image>
@@ -36,7 +36,7 @@ const About = () => {
           <Box mt={["0.8em", "0.8em", "-7em"]} ms={["7em", "7em", "7.5em"]}  boxSize={"fit-content"}>
             <Image h={["5.7em", "5.7em", "8.5em"]} w={["5.7em", "5.7em", "8.5em"]} src={hackers} ms="0"></Image>
           </Box> 
-          <Box mt={["-7.3em", "-7.3em", "-7.3em"]} ms={["14.8em", "14.8em", "1em"]} zIndex={-1} boxSize={"fit-content"}>
+          <Box mt={["-7.4em", "-7.4em", "-7.3em"]} ms={["14.8em", "14.8em", "1em"]} zIndex={-1} boxSize={"fit-content"}>
             <Image h={["4em", "4em", "6.7em"]} w={["4em", "4em", "6.7em"]} src={vr} ms="1.8em" mt="4.5em"></Image>
           </Box> 
         </Box>      

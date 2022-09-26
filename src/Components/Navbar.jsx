@@ -16,25 +16,20 @@ import insta from './assets/icons/instagram.png';
 import facebook from './assets/icons/facebook.png';
 import twitter from './assets/icons/twitter.png';
 import asset from './assets/icons/Asset.png';
+
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const Links = [
-    { text: 'Home', link: '' },
-    { text: 'About', link: '' },
-    { text: 'Stats', link: '' },
+    { text: 'Home', link: '#home' },
+    { text: 'About', link: '#about' },
+    { text: 'Stats', link: '#stats' },
     { text: 'Events', link: '' },
     { text: 'Prizes', link: '' },
     { text: 'Sponsors', link: '' },
   ];
   return (
-    <Flex
-      bgGradient='radial(rgba(24, 33, 50, 1),rgba(44, 64, 91, 1))'
-      zIndex={99}
-      top={0}
-      overflowX={'clip'}
-      position='sticky'
-    >
-      <Box w='100%'>
+    <Flex bg='#183249' zIndex={99} top={0} overflowX={'clip'} position='sticky'>
+      <Box w='100%' mt='0.78em'>
         <Flex
           wrap='wrap'
           justifyContent={'center'}
@@ -46,11 +41,13 @@ export const Navbar = () => {
             spacing='2rem'
             wrap={'wrap'}
             display={{ base: 'none', lg: 'flex' }}
+            mt='0.5em'
+            mb='0.3em'
           >
             {Links.map(link => {
               return (
                 <Button variant='link' key={link.text}>
-                  <Text fontSize='1.12rem' color='#EFF8FA'>
+                  <Text fontSize='1.12rem' color='#EFF8FA' fontWeight={'400'}>
                     {link.text}
                   </Text>
                 </Button>
@@ -74,9 +71,20 @@ export const Navbar = () => {
               borderStyle='solid'
               borderColor='#EFF8FA'
               borderRadius='100px'
+              _hover={{ cursor: 'pointer', background: '#000' }}
             >
-              <Button backgroundColor='transparent' variant='link'>
-                <Text fontSize='1rem' color='#EFF8FA'>
+              <Button
+                backgroundColor='transparent'
+                variant='link'
+                _hover={{ cursor: 'pointer', color: '#000' }}
+              >
+                <Text
+                  fontSize='1rem'
+                  color='#EFF8FA'
+                  fontWeight={'400'}
+                  mt='0.4em'
+                  _hover={{ cursor: 'pointer' }}
+                >
                   Interested in sponsoring?
                 </Text>
               </Button>
@@ -100,14 +108,19 @@ export const Navbar = () => {
             <HStack spacing={'0.75rem'}>
               <Box
                 w='200px'
-                h='36px'
+                h='40px'
                 border='3px'
                 borderStyle='solid'
                 borderColor='#EFF8FA'
                 borderRadius='100px'
+                _hover={{ cursor: 'pointer', background: '#000' }}
               >
-                <Button backgroundColor='transparent' variant='link'>
-                  <Text fontSize='1rem' color='#EFF8FA'>
+                <Button
+                  backgroundColor='transparent'
+                  variant='link'
+                  _hover={{ cursor: 'pointer', color: '#000' }}
+                >
+                  <Text fontSize='1rem' mt='0.2em' color='#EFF8FA'>
                     Interested in sponsoring?
                   </Text>
                 </Button>

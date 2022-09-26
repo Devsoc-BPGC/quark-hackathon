@@ -11,8 +11,8 @@ const Prizes = () => {
           <Text
             as={'h2'}
             w={'85vw'}
-            fontSize={{ base: '29px', md: '64px' }}
-            fontWeight={'900'}
+            fontSize={{ base: '1.8em', md: '3em' }}
+            fontWeight={'700'}
             textAlign={{ base: 'left', md: 'right' }}
             mb={'5rem'}
             color={'#EFF8FA'}
@@ -31,8 +31,8 @@ const Prizes = () => {
             >
               <VStack alignItems={'flex-start'}>
                 <Text
-                  fontSize={{ base: '24px', md: '48px' }}
-                  fontWeight='900'
+                  fontSize={{ base: '1.5em', md: '2em' }}
+                  fontWeight='700'
                   color={'#EFF8FA'}
                 >
                   Event Description
@@ -41,17 +41,19 @@ const Prizes = () => {
                   alignItems={'flex-start'}
                   spacing={{ base: '2rem', md: '' }}
                 >
-                  <Text
-                    textAlign={'left'}
-                    fontSize={{ base: '16px', md: '18px' }}
-                    fontWeight='500'
-                    w={{ base: '100%', md: '75%' }}
-                    color={'#EFF8FA'}
-                  >
-                    Excepteur sint occaecat cupidatat ure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </Text>
+                  <Box>
+                    <Text
+                      textAlign={'left'}
+                      fontSize={{ base: '16px', md: '18px' }}
+                      fontWeight='400'
+                      w={{ base: '19.5em', md: '23em' }}
+                      color={'#EFF8FA'}
+                    >
+                      Excepteur sint occaecat cupidatat ure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu
+                      fugiat nulla pariatur.
+                    </Text>
+                  </Box>
                   <HStack>
                     <Image
                       src={rupee}
@@ -60,10 +62,10 @@ const Prizes = () => {
                     />
                     <Text
                       fontSize={{ base: '14px', md: '24px' }}
-                      fontWeight='900'
+                      fontWeight='700'
                       color={'#EFF8FA'}
                     >
-                      5000
+                      5,000
                     </Text>
                   </HStack>
                 </VStack>
@@ -83,13 +85,14 @@ const Prizes = () => {
                 <Text
                   color={'#183249'}
                   fontSize={{ base: '24px', md: '30px', lg: '36px' }}
-                  fontWeight={'900'}
+                  fontWeight={'700'}
                 >
                   Cosmic Express
                 </Text>
               </Box>
             </VStack>
             <Image
+              ms={{ md: '11em' }}
               src={trophies}
               mt={{ base: '4.5rem' }}
               mb={{ base: '4rem' }}

@@ -12,8 +12,12 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
+  Input,
+  InputGroup,
+  InputRightElement,
 } from '@chakra-ui/react';
 import robotGoose from './assets/icons/robogoose4.png';
+import buttonIcon from './assets/icons/ButtonIcon.png';
 import mailIcon from './assets/icons/mail.png';
 import insta from './assets/icons/instagram.png';
 import facebook from './assets/icons/facebook.png';
@@ -69,7 +73,6 @@ const Faq = () => {
       fontSize={{ base: '29px', md: '64px' }}
       fontWeight={'700'}
       direction='column'
-      h={'981px'}
     >
       <VStack alignItems={'flex-start'}>
         <Text ml={'8vw'} color={'#31433F'} mb={'2.8rem'}>
@@ -143,22 +146,30 @@ const Faq = () => {
         </HStack>
       </VStack>
       <Flex
-        h='2049px'
+        h='500px'
         bgColor={'#183249'}
         fontSize={'16px'}
-        clipPath='ellipse(1028px 75% at bottom center)'
+        clipPath='ellipse(2049px 75% at bottom center)'
         mt={0}
       >
         <VStack
           w='100%'
+          bgColor={'#183249'}
           alignItems={'center'}
           justifyContent={'end'}
           gap='30px'
           mb={'2.1rem'}
           mt={'1rem'}
+          clipPath='ellipse(2049px 70% at bottom center)'
         >
           <Image src={robotGoose} alt='roboGoose' h='60px' w='45px' />
-          <HStack color='#EFF8FA' fontWeight='400' gap={'1.5rem'}>
+          <HStack
+            color='#EFF8FA'
+            fontWeight='400'
+            gap={'1.5rem'}
+            wrap={'wrap'}
+            w={{ base: '320px', md: 'fit-content' }}
+          >
             <Text _hover={{ cursor: 'pointer' }}>About the hackathon</Text>
             <Text _hover={{ cursor: 'pointer' }}>Open Source</Text>
             <Text _hover={{ cursor: 'pointer' }}>Privacy Policy</Text>
@@ -178,6 +189,60 @@ const Faq = () => {
               <Image src={insta} h='22px' w='22px'></Image>
             </Button>
           </HStack>
+          <InputGroup
+            w={{ base: '299px', md: '658px' }}
+            borderRadius={'100px'}
+            bgColor={'#EFF8FA'}
+            border={'3px'}
+            borderStyle={'solid'}
+            borderColor={'#009DD9'}
+          >
+            <Input
+              color={'black'}
+              w={{ base: '250px', md: '600px' }}
+              display={{ base: 'block', md: 'none' }}
+              borderRadius={'100px'}
+              border={0}
+              h={{ base: '42px', md: '46px' }}
+              focusBorderColor={'#EFF8FA'}
+              _placeholder={{
+                color: '#183249',
+                wrap: 'wrap',
+                lineHeight: '16px',
+                fontSize: '10px',
+                whiteSpace: 'pre-line',
+                position: 'relative',
+                top: '-9px',
+                fontWeight: '600',
+              }}
+              placeholder='Enter your email address to be the first to know when applications open'
+            />
+            <Input
+              color={'black'}
+              display={{ base: 'none', md: 'block' }}
+              w={{ base: '250px', md: '600px' }}
+              borderRadius={'100px'}
+              border={0}
+              h={{ base: '42px', md: '46px' }}
+              focusBorderColor={'#EFF8FA'}
+              _placeholder={{ color: '#183249', fontWeight: '500' }}
+              placeholder='Enter your email address to be the first to know when applications open'
+            />
+            <InputRightElement w={'50px'} h={'46px'}>
+              <Button
+                borderRadius={'50%'}
+                w={{ base: '42px', md: '46px' }}
+                h={{ base: '42px', md: '46px' }}
+                p={0}
+              >
+                <Image
+                  h={{ base: '42px', md: '46px' }}
+                  w={{ base: '42px', md: '46px' }}
+                  src={buttonIcon}
+                />
+              </Button>
+            </InputRightElement>
+          </InputGroup>
         </VStack>
       </Flex>
     </Flex>

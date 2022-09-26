@@ -15,15 +15,15 @@ const Stats = () => {
     >
       <Box w='full'>
         <Heading
-          mt={['2.8em', '2.8em', '1.7em']}
+          mt={['2.1em', '2.1em', '1.4em']}
           w='fit-content'
           mb='1.2em'
           me={['auto', 'auto', '3em']}
-          ms={['1.3em', '1.3em', 'auto']}
+          ms={['1.8em', '1.8em', 'auto']}
           as='h1'
           color={'#fff'}
           fontWeight={['640', '640', '640']}
-          fontSize={['1.9rem', '1.9rem', '3.5rem']}
+          fontSize={['2.3rem', '2.3rem', '3.8rem']}
         >
           Hackathon 68.0 stats
         </Heading>

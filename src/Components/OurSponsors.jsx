@@ -36,8 +36,11 @@ const OurSponsors = () => {
     >
       <Box w='full'>
         <Hide below='md'>
-          <Box>
-            <HStack mt='3.4em' ms='3.8em' gap={'3em'}>
+          <Heading align='left' as='h2' mt='1em' ms='5em' fontSize={'1em'}>
+            Our sponsors
+          </Heading>
+          <Box mt='-1em'>
+            <HStack mt='3em' ms='3.8em' gap={'3em'}>
               <Box>
                 <Image src={facebook}></Image>
               </Box>

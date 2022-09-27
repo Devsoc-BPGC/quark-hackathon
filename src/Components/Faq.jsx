@@ -150,7 +150,7 @@ const Faq = () => {
         h='500px'
         bgColor={'#183249'}
         fontSize={'16px'}
-        clipPath='ellipse(2049px 75% at bottom center)'
+        clipPath={['ellipse(1100px 75% at bottom center)']}
         mt={0}
       >
         <VStack
@@ -164,6 +164,7 @@ const Faq = () => {
           clipPath='ellipse(2049px 70% at bottom center)'
         >
           <Image
+            zIndex={1}
             src={robotGoose}
             alt='roboGoose'
             h='60px'
@@ -173,14 +174,18 @@ const Faq = () => {
           <HStack
             color='#EFF8FA'
             fontWeight='400'
-            gap={'1.5rem'}
+            gap={'1.3rem'}
             wrap={'wrap'}
             w={{ base: '320px', md: 'fit-content' }}
           >
             <Text _hover={{ cursor: 'pointer' }}>About the hackathon</Text>
-            <Text _hover={{ cursor: 'pointer' }}>Open Source</Text>
+            <Text _hover={{ cursor: 'pointer' }}>
+              &#160;&#160;&#160;&#160;&#160;&#160;Open Source
+            </Text>
             <Text _hover={{ cursor: 'pointer' }}>Privacy Policy</Text>
-            <Text _hover={{ cursor: 'pointer' }}>Code of Conduct</Text>
+            <Text _hover={{ cursor: 'pointer' }}>
+              &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Code of Conduct
+            </Text>
           </HStack>
           <HStack gap={'2rem'}>
             <Button variant={'link'}>
@@ -206,7 +211,7 @@ const Faq = () => {
           >
             <Input
               color={'black'}
-              w={{ base: '250px', md: '600px' }}
+              w={{ base: '350px', md: '600px' }}
               display={{ base: 'block', md: 'none' }}
               borderRadius={'100px'}
               border={0}
@@ -220,7 +225,7 @@ const Faq = () => {
                 whiteSpace: 'pre-line',
                 position: 'relative',
                 top: '-9px',
-                fontWeight: '600',
+                fontWeight: '300',
               }}
               placeholder='Enter your email address to be the first to know when applications open'
             />
@@ -232,7 +237,7 @@ const Faq = () => {
               border={0}
               h={{ base: '42px', md: '46px' }}
               focusBorderColor={'#EFF8FA'}
-              _placeholder={{ color: '#183249', fontWeight: '500' }}
+              _placeholder={{ color: '#183249', fontWeight: '300' }}
               placeholder='Enter your email address to be the first to know when applications open'
             />
             <InputRightElement w={'50px'} h={'46px'}>
@@ -246,6 +251,7 @@ const Faq = () => {
                   h={{ base: '42px', md: '46px' }}
                   w={{ base: '42px', md: '46px' }}
                   src={buttonIcon}
+                  mb={{ base: '0.2em', md: '0.01em' }}
                 />
               </Button>
             </InputRightElement>

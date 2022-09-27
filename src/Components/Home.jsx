@@ -5,6 +5,7 @@ import qclogo from './assets/icons/qclogo.svg';
 import devfolio from './assets/icons/Devfolio.png';
 import laptop from './assets/icons/Laptop.svg';
 import group30 from './assets/icons/Group30.svg';
+
 export const Home = () => {
   return (
     <Flex

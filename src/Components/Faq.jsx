@@ -22,6 +22,7 @@ import mailIcon from './assets/icons/mail.png';
 import insta from './assets/icons/instagram.png';
 import facebook from './assets/icons/facebook.png';
 import twitter from './assets/icons/twitter.png';
+
 const Faq = () => {
   const FAQarr1 = [
     {
@@ -162,7 +163,13 @@ const Faq = () => {
           mt={'1rem'}
           clipPath='ellipse(2049px 70% at bottom center)'
         >
-          <Image src={robotGoose} alt='roboGoose' h='60px' w='45px' />
+          <Image
+            src={robotGoose}
+            alt='roboGoose'
+            h='60px'
+            w='45px'
+            _hover={{ cursor: 'pointer' }}
+          />
           <HStack
             color='#EFF8FA'
             fontWeight='400'

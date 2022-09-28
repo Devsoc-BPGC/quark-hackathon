@@ -8,6 +8,7 @@ import Stats from './Components/Stats';
 import Faq from './Components/Faq';
 import Prizes from './Components/Prizes';
 import OurSponsors from './Components/OurSponsors';
+import SponsorshipCTA from './Components/Sponsorshipcta';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Stats />
         <Prizes />
+        <SponsorshipCTA />
         <OurSponsors />
         <Faq />
         <Footer />

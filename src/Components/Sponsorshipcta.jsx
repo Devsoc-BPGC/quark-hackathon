@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Box,
   Flex,
@@ -9,10 +9,27 @@ import {
   Heading,
   Text,
   Button,
+  Link,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
 } from '@chakra-ui/react';
 import girl from './assets/icons/girldraw.svg';
+import sponsorLogo from './assets/icons/sponsorSlider.svg';
 
 const SponsorshipCTA = () => {
+  const [tabIndex, setTabIndex] = useState(0);
+
+  const handleSliderChange = event => {
+    setTabIndex(parseInt(event.target.value, 10));
+  };
+
+  const handleTabsChange = index => {
+    setTabIndex(index);
+  };
+
   return (
     <Flex
       id='about'
@@ -66,11 +83,357 @@ const SponsorshipCTA = () => {
               <Image src={girl}></Image>
             </Box>
           </Box>
-          <Box w='full' h='full'>
+          <Box mt='-1.3em' w='full' h='full'>
             <Box w='fit-content'>
               <Heading as='h2' fontWeight={'600'} fontSize='1em' ms='3em'>
                 Sponsor showcase
               </Heading>
+            </Box>
+            <Box w='fit-content' ms='1em' mt='5em'>
+              <Tabs index={tabIndex} onChange={handleTabsChange}>
+                <TabPanels>
+                  <TabPanel>
+                    <Image ms='7em' src={sponsorLogo}></Image>
+                    <Box
+                      h='9em'
+                      align='left'
+                      bg='white'
+                      w='36em'
+                      mt='-7em'
+                      ms='25em'
+                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                    >
+                      <Text
+                        ms='2em'
+                        pt='2.4em'
+                        pe='2em'
+                        pb='1em'
+                        fontSize={'0.75em'}
+                        fontWeight='500'
+                      >
+                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
+                        et nisl molestie, laoreet lobortis erat molestie. Sed
+                        sapien tortor, interdum ut magna vitae, finibus
+                        fermentum mauris. Donec aliquet massa ac quam
+                        consectetur, nec porttitor justo herndrerierte.”
+                      </Text>
+                      <Link
+                        ms='2em'
+                        mt='7em'
+                        color='#009DD9'
+                        fontSize={'0.75em'}
+                      >
+                        Sponsor provided link >
+                      </Link>
+                    </Box>
+                  </TabPanel>
+                  <TabPanel>
+                    <Image ms='7em' src={sponsorLogo}></Image>
+                    <Box
+                      h='9em'
+                      align='left'
+                      bg='white'
+                      w='36em'
+                      mt='-7em'
+                      ms='25em'
+                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                    >
+                      <Text
+                        ms='2em'
+                        pt='2.4em'
+                        pe='2em'
+                        pb='1em'
+                        fontSize={'0.75em'}
+                        fontWeight='500'
+                      >
+                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
+                        et nisl molestie, laoreet lobortis erat molestie. Sed
+                        sapien tortor, interdum ut magna vitae, finibus
+                        fermentum mauris. Donec aliquet massa ac quam
+                        consectetur, nec porttitor justo herndrerierte.”
+                      </Text>
+                      <Link
+                        ms='2em'
+                        mt='7em'
+                        color='#009DD9'
+                        fontSize={'0.75em'}
+                      >
+                        Sponsor provided link >
+                      </Link>
+                    </Box>
+                  </TabPanel>
+                  <TabPanel>
+                    <Image ms='7em' src={sponsorLogo}></Image>
+                    <Box
+                      h='9em'
+                      align='left'
+                      bg='white'
+                      w='36em'
+                      mt='-7em'
+                      ms='25em'
+                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                    >
+                      <Text
+                        ms='2em'
+                        pt='2.4em'
+                        pe='2em'
+                        pb='1em'
+                        fontSize={'0.75em'}
+                        fontWeight='500'
+                      >
+                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
+                        et nisl molestie, laoreet lobortis erat molestie. Sed
+                        sapien tortor, interdum ut magna vitae, finibus
+                        fermentum mauris. Donec aliquet massa ac quam
+                        consectetur, nec porttitor justo herndrerierte.”
+                      </Text>
+                      <Link
+                        ms='2em'
+                        mt='7em'
+                        color='#009DD9'
+                        fontSize={'0.75em'}
+                      >
+                        Sponsor provided link >
+                      </Link>
+                    </Box>
+                  </TabPanel>
+                  <TabPanel>
+                    <Image ms='7em' src={sponsorLogo}></Image>
+                    <Box
+                      h='9em'
+                      align='left'
+                      bg='white'
+                      w='36em'
+                      mt='-7em'
+                      ms='25em'
+                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                    >
+                      <Text
+                        ms='2em'
+                        pt='2.4em'
+                        pe='2em'
+                        pb='1em'
+                        fontSize={'0.75em'}
+                        fontWeight='500'
+                      >
+                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
+                        et nisl molestie, laoreet lobortis erat molestie. Sed
+                        sapien tortor, interdum ut magna vitae, finibus
+                        fermentum mauris. Donec aliquet massa ac quam
+                        consectetur, nec porttitor justo herndrerierte.”
+                      </Text>
+                      <Link
+                        ms='2em'
+                        mt='7em'
+                        color='#009DD9'
+                        fontSize={'0.75em'}
+                      >
+                        Sponsor provided link >
+                      </Link>
+                    </Box>
+                  </TabPanel>
+                  <TabPanel>
+                    <Image ms='7em' src={sponsorLogo}></Image>
+                    <Box
+                      h='9em'
+                      align='left'
+                      bg='white'
+                      w='36em'
+                      mt='-7em'
+                      ms='25em'
+                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                    >
+                      <Text
+                        ms='2em'
+                        pt='2.4em'
+                        pe='2em'
+                        pb='1em'
+                        fontSize={'0.75em'}
+                        fontWeight='500'
+                      >
+                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
+                        et nisl molestie, laoreet lobortis erat molestie. Sed
+                        sapien tortor, interdum ut magna vitae, finibus
+                        fermentum mauris. Donec aliquet massa ac quam
+                        consectetur, nec porttitor justo herndrerierte.”
+                      </Text>
+                      <Link
+                        ms='2em'
+                        mt='7em'
+                        color='#009DD9'
+                        fontSize={'0.75em'}
+                      >
+                        Sponsor provided link >
+                      </Link>
+                    </Box>
+                  </TabPanel>
+                  <TabPanel>
+                    <Image ms='7em' src={sponsorLogo}></Image>
+                    <Box
+                      h='9em'
+                      align='left'
+                      bg='white'
+                      w='36em'
+                      mt='-7em'
+                      ms='25em'
+                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                    >
+                      <Text
+                        ms='2em'
+                        pt='2.4em'
+                        pe='2em'
+                        pb='1em'
+                        fontSize={'0.75em'}
+                        fontWeight='500'
+                      >
+                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
+                        et nisl molestie, laoreet lobortis erat molestie. Sed
+                        sapien tortor, interdum ut magna vitae, finibus
+                        fermentum mauris. Donec aliquet massa ac quam
+                        consectetur, nec porttitor justo herndrerierte.”
+                      </Text>
+                      <Link
+                        ms='2em'
+                        mt='7em'
+                        color='#009DD9'
+                        fontSize={'0.75em'}
+                      >
+                        Sponsor provided link >
+                      </Link>
+                    </Box>
+                  </TabPanel>
+                  <TabPanel>
+                    <Image ms='7em' src={sponsorLogo}></Image>
+                    <Box
+                      h='9em'
+                      align='left'
+                      bg='white'
+                      w='36em'
+                      mt='-7em'
+                      ms='25em'
+                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                    >
+                      <Text
+                        ms='2em'
+                        pt='2.4em'
+                        pe='2em'
+                        pb='1em'
+                        fontSize={'0.75em'}
+                        fontWeight='500'
+                      >
+                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
+                        et nisl molestie, laoreet lobortis erat molestie. Sed
+                        sapien tortor, interdum ut magna vitae, finibus
+                        fermentum mauris. Donec aliquet massa ac quam
+                        consectetur, nec porttitor justo herndrerierte.”
+                      </Text>
+                      <Link
+                        ms='2em'
+                        mt='7em'
+                        color='#009DD9'
+                        fontSize={'0.75em'}
+                      >
+                        Sponsor provided link >
+                      </Link>
+                    </Box>
+                  </TabPanel>
+                  <TabPanel>
+                    <Image ms='7em' src={sponsorLogo}></Image>
+                    <Box
+                      h='9em'
+                      align='left'
+                      bg='white'
+                      w='36em'
+                      mt='-7em'
+                      ms='25em'
+                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                    >
+                      <Text
+                        ms='2em'
+                        pt='2.4em'
+                        pe='2em'
+                        pb='1em'
+                        fontSize={'0.75em'}
+                        fontWeight='500'
+                      >
+                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
+                        et nisl molestie, laoreet lobortis erat molestie. Sed
+                        sapien tortor, interdum ut magna vitae, finibus
+                        fermentum mauris. Donec aliquet massa ac quam
+                        consectetur, nec porttitor justo herndrerierte.”
+                      </Text>
+                      <Link
+                        ms='2em'
+                        mt='7em'
+                        color='#009DD9'
+                        fontSize={'0.75em'}
+                      >
+                        Sponsor provided link >
+                      </Link>
+                    </Box>
+                  </TabPanel>
+                </TabPanels>
+                <Box mt='-1.3em' align='center' ms='18.5em'>
+                  <TabList w='fit-content' ms='0.3em'>
+                    <Tab
+                      _active={{ background: 'transparent' }}
+                      fontSize={'2em'}
+                      fontWeight='900'
+                    >
+                      .
+                    </Tab>
+                    <Tab
+                      _active={{ background: 'transparent' }}
+                      fontSize={'2em'}
+                      fontWeight='900'
+                    >
+                      .
+                    </Tab>
+                    <Tab
+                      _active={{ background: 'transparent' }}
+                      fontSize={'2em'}
+                      fontWeight='900'
+                    >
+                      .
+                    </Tab>
+                    <Tab
+                      _active={{ background: 'transparent' }}
+                      fontSize={'2em'}
+                      fontWeight='900'
+                    >
+                      .
+                    </Tab>
+                    <Tab
+                      _active={{ background: 'transparent' }}
+                      fontSize={'2em'}
+                      fontWeight='900'
+                    >
+                      .
+                    </Tab>
+                    <Tab
+                      _active={{ background: 'transparent' }}
+                      fontSize={'2em'}
+                      fontWeight='900'
+                    >
+                      .
+                    </Tab>
+                    <Tab
+                      _active={{ background: 'transparent' }}
+                      fontSize={'2em'}
+                      fontWeight='900'
+                    >
+                      .
+                    </Tab>
+                    <Tab
+                      _active={{ background: 'transparent' }}
+                      fontSize={'2em'}
+                      fontWeight='900'
+                    >
+                      .
+                    </Tab>
+                  </TabList>
+                </Box>
+              </Tabs>
             </Box>
           </Box>
         </Box>

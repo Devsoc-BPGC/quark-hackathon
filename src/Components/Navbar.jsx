@@ -23,9 +23,9 @@ export const Navbar = () => {
     { text: 'Home', link: '#home' },
     { text: 'About', link: '#about' },
     { text: 'Stats', link: '#stats' },
-    { text: 'Events', link: '' },
-    { text: 'Prizes', link: '' },
-    { text: 'Sponsors', link: '' },
+    { text: 'Events', link: '#events' },
+    { text: 'Prizes', link: '#prizes' },
+    { text: 'Sponsors', link: '#sponsorshipcta' },
   ];
   return (
     <Flex bg='#183249' zIndex={99} top={0} overflowX={'clip'} position='sticky'>
@@ -174,7 +174,7 @@ export const Navbar = () => {
         >
           <VStack alignItems={'center'} as={'nav'} spacing={4}>
             {Links.map(link => (
-              <Button variant='link' key={link.text}>
+              <Button variant='link' key={link.text} href={link.link}>
                 <Text fontSize='1.8rem' color='#EFF8FA'>
                   {link.text}
                 </Text>

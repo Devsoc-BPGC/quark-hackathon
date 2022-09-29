@@ -122,8 +122,8 @@ export const Home = () => {
         padding={0}
         position={{ md: 'absolute' }}
         zIndex={0}
-        left={{ md: '50vw' }}
-        top={{ md: '10vh', lg: '10vh' }}
+        left={{ md: '52vw' }}
+        top={{ md: '9vh', lg: '12vh' }}
       >
         <Image
           display={{ base: 'none', md: 'block' }}
@@ -131,7 +131,7 @@ export const Home = () => {
           h={{ md: '350px', lg: '600px' }}
           src={laptop}
           mt='2em'
-          ms='2em'
+          // ms='2em'
         ></Image>
       </Flex>
       <Image

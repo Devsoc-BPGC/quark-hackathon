@@ -108,7 +108,13 @@ export const Home = () => {
             backgroundColor='#3770FF'
             colorScheme={'purple'}
           >
-            <Image w='25px' h='25px' src={devfolio} mr='2px'></Image>
+            <Image
+              w='25px'
+              h='25px'
+              borderRadius={'3em'}
+              src={devfolio}
+              mr='2px'
+            ></Image>
             <Text
               as='span'
               fontSize={{ base: '0.75rem', md: '1rem' }}

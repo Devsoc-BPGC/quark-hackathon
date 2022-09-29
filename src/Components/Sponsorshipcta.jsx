@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import {
   Box,
   Flex,
-  HStack,
   Image,
-  Hide,
-  Show,
   Heading,
   Text,
   Button,
@@ -22,17 +19,13 @@ import sponsorLogo from './assets/icons/sponsorSlider.svg';
 const SponsorshipCTA = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
-  const handleSliderChange = event => {
-    setTabIndex(parseInt(event.target.value, 10));
-  };
-
   const handleTabsChange = index => {
     setTabIndex(index);
   };
 
   return (
     <Flex
-      id='about'
+      id='sponsorshipcta'
       h={['670px', '670px', '900px']}
       bg='#EFF8FA'
       backgroundRepeat='no-repeat'

@@ -28,7 +28,7 @@ import inv from './assets/SponsorLogos/Group 24.png';
 const OurSponsors = () => {
   return (
     <Flex
-      id='about'
+      id='oursponsors'
       h={['670px', '670px', '800px']}
       bg='#EFF8FA'
       backgroundRepeat='no-repeat'

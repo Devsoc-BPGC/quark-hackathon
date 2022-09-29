@@ -70,6 +70,7 @@ const Faq = () => {
   ];
   return (
     <Flex
+      id='faq'
       bgColor='#EFF8FA'
       fontSize={{ base: '29px', md: '64px' }}
       fontWeight={'700'}

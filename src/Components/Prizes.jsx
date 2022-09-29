@@ -5,7 +5,10 @@ import trophies from './assets/icons/Trophies.png';
 
 const Prizes = () => {
   return (
-    <Flex bgGradient={'linear-gradient(180deg, #2C4C63 0%, #29728F 98.96%);'}>
+    <Flex
+      id='prizes'
+      bgGradient={'linear-gradient(180deg, #2C4C63 0%, #29728F 98.96%);'}
+    >
       <Flex m={{ base: '1vw', md: '5vw' }}>
         <VStack alignItems={'center'}>
           <Text

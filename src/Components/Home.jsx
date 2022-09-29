@@ -5,6 +5,7 @@ import qclogo from './assets/icons/qclogo.svg';
 import devfolio from './assets/icons/Devfolio.png';
 import laptop from './assets/icons/Laptop.svg';
 import group30 from './assets/icons/Group30.svg';
+
 export const Home = () => {
   return (
     <Flex
@@ -107,7 +108,13 @@ export const Home = () => {
             backgroundColor='#3770FF'
             colorScheme={'purple'}
           >
-            <Image w='25px' h='25px' src={devfolio} mr='2px'></Image>
+            <Image
+              w='25px'
+              h='25px'
+              borderRadius={'3em'}
+              src={devfolio}
+              mr='2px'
+            ></Image>
             <Text
               as='span'
               fontSize={{ base: '0.75rem', md: '1rem' }}

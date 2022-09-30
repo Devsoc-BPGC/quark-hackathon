@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <Flex
       id='home'
-      h='800px'
+      h={['700px', '800px', '800px']}
       bgGradient='linear(to-b, #183249, #344158, #2A4A62)'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}
@@ -23,7 +23,7 @@ export const Home = () => {
           justifyContent='left'
           textAlign='left'
           ml='8vw'
-          mt='12vh'
+          mt={['1.7em', '12vh', '12vh']}
           shrink={2}
         >
           <Box display={{ base: 'none', lg: 'block' }}>
@@ -33,8 +33,8 @@ export const Home = () => {
             <Text
               lineHeight='4.5rem'
               color='#FFFFFF'
-              fontWeight='700'
-              fontSize={['1.8rem', null, '2.5rem', '4rem']}
+              fontWeight='600'
+              fontSize={['1.6rem', '2.5rem', '4rem']}
               wordBreak='break-word'
             >
               Generic Hackathon 69.0
@@ -103,8 +103,9 @@ export const Home = () => {
             </Box>
           </Box>
           <Button
-            w={{ sm: '150px', md: '200px' }}
-            mt='25px'
+            w={['10em', '10em', '200px']}
+            h={['2em', '2em', '']}
+            mt={['1em', '1em', '25px']}
             backgroundColor='#3770FF'
             colorScheme={'purple'}
           >
@@ -142,6 +143,7 @@ export const Home = () => {
         ></Image>
       </Flex>
       <Image
+        mt='2em'
         display={{ base: 'block', md: 'none' }}
         w='100%'
         h='398px'

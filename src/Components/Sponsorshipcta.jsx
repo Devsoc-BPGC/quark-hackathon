@@ -441,7 +441,7 @@ const SponsorshipCTA = () => {
                 <Box mt='-1.3em' align='center' ms={['0em', '0em', '18.5em']}>
                   <TabList
                     w={['0em', 'fit-content', 'fit-content']}
-                    ms={['-16.5em', '1.5em', '0.3em']}
+                    ms={['-16em', '1.5em', '0.3em']}
                   >
                     <Tab
                       _active={{ background: 'transparent' }}

@@ -23,7 +23,7 @@ export const Home = () => {
           justifyContent='left'
           textAlign='left'
           ml='8vw'
-          mt={['1.7em', '12vh', '12vh']}
+          mt={['1.7em', '8vh', '12vh']}
           shrink={2}
         >
           <Box display={{ base: 'none', lg: 'block' }}>
@@ -34,13 +34,14 @@ export const Home = () => {
               lineHeight='4.5rem'
               color='#FFFFFF'
               fontWeight='600'
-              fontSize={['1.6rem', '2.5rem', '4rem']}
+              fontSize={['1.6rem', '2.3rem', '4rem']}
               wordBreak='break-word'
             >
               Generic Hackathon 69.0
             </Text>
             <Spacer h={{ base: '1.5rem', md: '0' }} />
             <Text
+              mt={['0.8em', '0.8em', '3em']}
               fontSize={{ base: '0.75rem', md: '1rem' }}
               lineHeight='12px'
               color='#93E5C8'

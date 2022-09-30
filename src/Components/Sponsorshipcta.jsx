@@ -112,7 +112,7 @@ const SponsorshipCTA = () => {
             </Box>
             <Box
               w='fit-content'
-              ms={['-2em', '-0.7em', '1em']}
+              ms={['-0.99em', '-0.7em', '1em']}
               mt={['5.5em', '5.5em', '2em']}
             >
               <Tabs index={tabIndex} onChange={handleTabsChange}>
@@ -441,7 +441,7 @@ const SponsorshipCTA = () => {
                 <Box mt='-1.3em' align='center' ms={['0em', '0em', '18.5em']}>
                   <TabList
                     w={['0em', 'fit-content', 'fit-content']}
-                    ms={['-15.5em', '1.5em', '0.3em']}
+                    ms={['-17em', '1.5em', '0.3em']}
                   >
                     <Tab
                       _active={{ background: 'transparent' }}

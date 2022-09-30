@@ -29,7 +29,7 @@ const OurSponsors = () => {
   return (
     <Flex
       id='oursponsors'
-      h={['670px', '670px', '800px']}
+      h={['510px', '670px', '800px']}
       bg='#EFF8FA'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}

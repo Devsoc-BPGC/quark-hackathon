@@ -77,7 +77,7 @@ const Faq = () => {
       direction='column'
     >
       <VStack alignItems={'flex-start'}>
-        <Text ml={'8vw'} color={'#31433F'} mb={'2.8rem'}>
+        <Text align={'left'} ml={'8vw'} color={'#31433F'} mb={'2.8rem'}>
           Frequently asked questions
         </Text>
         <HStack w='100%' justifyContent={'space-around'} mb={0}>

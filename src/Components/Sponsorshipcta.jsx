@@ -104,14 +104,14 @@ const SponsorshipCTA = () => {
                 fontWeight={['620', '620', '600']}
                 mt={['5em', '5em', '0em']}
                 fontSize={['0.85em', '0.85em', '1em']}
-                ms={['2.2em', '2.2em', '4.3em']}
+                ms={['0.8em', '2.2em', '4.3em']}
               >
                 Sponsor showcase
               </Heading>
             </Box>
             <Box
               w='fit-content'
-              ms={['-0.7em', '-0.7em', '1em']}
+              ms={['-2em', '-0.7em', '1em']}
               mt={['5.5em', '5.5em', '2em']}
             >
               <Tabs index={tabIndex} onChange={handleTabsChange}>
@@ -124,18 +124,18 @@ const SponsorshipCTA = () => {
                       src={sponsorLogo}
                     ></Image>
                     <Box
-                      h={['15em', '15em', '9em']}
+                      h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
-                      w={['18em', '18em', '36em']}
+                      w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
                       ms={['1.5em', '1.5em', '25em']}
                       boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
                     >
                       <Text
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         pt='2.4em'
-                        pe='2em'
+                        pe={['0em', '0em', '2em']}
                         pb='1em'
                         fontSize={'0.75em'}
                         fontWeight='500'
@@ -147,7 +147,7 @@ const SponsorshipCTA = () => {
                         consectetur, nec porttitor justo herndrerierte.”
                       </Text>
                       <Link
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         mt='7em'
                         color='#009DD9'
                         fontSize={'0.75em'}
@@ -164,18 +164,18 @@ const SponsorshipCTA = () => {
                       src={sponsorLogo}
                     ></Image>
                     <Box
-                      h={['15em', '15em', '9em']}
+                      h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
-                      w={['18em', '18em', '36em']}
+                      w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
                       ms={['1.5em', '1.5em', '25em']}
                       boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
                     >
                       <Text
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         pt='2.4em'
-                        pe='2em'
+                        pe={['0em', '0em', '2em']}
                         pb='1em'
                         fontSize={'0.75em'}
                         fontWeight='500'
@@ -187,7 +187,7 @@ const SponsorshipCTA = () => {
                         consectetur, nec porttitor justo herndrerierte.”
                       </Text>
                       <Link
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         mt='7em'
                         color='#009DD9'
                         fontSize={'0.75em'}
@@ -204,18 +204,18 @@ const SponsorshipCTA = () => {
                       src={sponsorLogo}
                     ></Image>
                     <Box
-                      h={['15em', '15em', '9em']}
+                      h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
-                      w={['18em', '18em', '36em']}
+                      w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
                       ms={['1.5em', '1.5em', '25em']}
                       boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
                     >
                       <Text
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         pt='2.4em'
-                        pe='2em'
+                        pe={['0em', '0em', '2em']}
                         pb='1em'
                         fontSize={'0.75em'}
                         fontWeight='500'
@@ -227,7 +227,7 @@ const SponsorshipCTA = () => {
                         consectetur, nec porttitor justo herndrerierte.”
                       </Text>
                       <Link
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         mt='7em'
                         color='#009DD9'
                         fontSize={'0.75em'}
@@ -244,18 +244,18 @@ const SponsorshipCTA = () => {
                       src={sponsorLogo}
                     ></Image>
                     <Box
-                      h={['15em', '15em', '9em']}
+                      h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
-                      w={['18em', '18em', '36em']}
+                      w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
                       ms={['1.5em', '1.5em', '25em']}
                       boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
                     >
                       <Text
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         pt='2.4em'
-                        pe='2em'
+                        pe={['0em', '0em', '2em']}
                         pb='1em'
                         fontSize={'0.75em'}
                         fontWeight='500'
@@ -267,7 +267,7 @@ const SponsorshipCTA = () => {
                         consectetur, nec porttitor justo herndrerierte.”
                       </Text>
                       <Link
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         mt='7em'
                         color='#009DD9'
                         fontSize={'0.75em'}
@@ -284,18 +284,18 @@ const SponsorshipCTA = () => {
                       src={sponsorLogo}
                     ></Image>
                     <Box
-                      h={['15em', '15em', '9em']}
+                      h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
-                      w={['18em', '18em', '36em']}
+                      w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
                       ms={['1.5em', '1.5em', '25em']}
                       boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
                     >
                       <Text
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         pt='2.4em'
-                        pe='2em'
+                        pe={['0em', '0em', '2em']}
                         pb='1em'
                         fontSize={'0.75em'}
                         fontWeight='500'
@@ -307,7 +307,7 @@ const SponsorshipCTA = () => {
                         consectetur, nec porttitor justo herndrerierte.”
                       </Text>
                       <Link
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         mt='7em'
                         color='#009DD9'
                         fontSize={'0.75em'}
@@ -324,18 +324,18 @@ const SponsorshipCTA = () => {
                       src={sponsorLogo}
                     ></Image>
                     <Box
-                      h={['15em', '15em', '9em']}
+                      h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
-                      w={['18em', '18em', '36em']}
+                      w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
                       ms={['1.5em', '1.5em', '25em']}
                       boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
                     >
                       <Text
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         pt='2.4em'
-                        pe='2em'
+                        pe={['0em', '0em', '2em']}
                         pb='1em'
                         fontSize={'0.75em'}
                         fontWeight='500'
@@ -347,7 +347,7 @@ const SponsorshipCTA = () => {
                         consectetur, nec porttitor justo herndrerierte.”
                       </Text>
                       <Link
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         mt='7em'
                         color='#009DD9'
                         fontSize={'0.75em'}
@@ -364,18 +364,18 @@ const SponsorshipCTA = () => {
                       src={sponsorLogo}
                     ></Image>
                     <Box
-                      h={['15em', '15em', '9em']}
+                      h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
-                      w={['18em', '18em', '36em']}
+                      w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
                       ms={['1.5em', '1.5em', '25em']}
                       boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
                     >
                       <Text
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         pt='2.4em'
-                        pe='2em'
+                        pe={['0em', '0em', '2em']}
                         pb='1em'
                         fontSize={'0.75em'}
                         fontWeight='500'
@@ -387,7 +387,7 @@ const SponsorshipCTA = () => {
                         consectetur, nec porttitor justo herndrerierte.”
                       </Text>
                       <Link
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         mt='7em'
                         color='#009DD9'
                         fontSize={'0.75em'}
@@ -404,18 +404,18 @@ const SponsorshipCTA = () => {
                       src={sponsorLogo}
                     ></Image>
                     <Box
-                      h={['15em', '15em', '9em']}
+                      h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
-                      w={['18em', '18em', '36em']}
+                      w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
                       ms={['1.5em', '1.5em', '25em']}
                       boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
                     >
                       <Text
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         pt='2.4em'
-                        pe='2em'
+                        pe={['0em', '0em', '2em']}
                         pb='1em'
                         fontSize={'0.75em'}
                         fontWeight='500'
@@ -427,7 +427,7 @@ const SponsorshipCTA = () => {
                         consectetur, nec porttitor justo herndrerierte.”
                       </Text>
                       <Link
-                        ms='2em'
+                        ms={['0.8em', '0.8em', '2em']}
                         mt='7em'
                         color='#009DD9'
                         fontSize={'0.75em'}
@@ -438,7 +438,10 @@ const SponsorshipCTA = () => {
                   </TabPanel>
                 </TabPanels>
                 <Box mt='-1.3em' align='center' ms={['0em', '0em', '18.5em']}>
-                  <TabList w='fit-content' ms={['1.5em', '1.5em', '0.3em']}>
+                  <TabList
+                    w={['0em', 'fit-content', 'fit-content']}
+                    ms={['-15.5em', '1.5em', '0.3em']}
+                  >
                     <Tab
                       _active={{ background: 'transparent' }}
                       fontSize={'2em'}

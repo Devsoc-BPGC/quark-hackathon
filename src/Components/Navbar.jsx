@@ -65,7 +65,7 @@ export const Navbar = () => {
               </Button>
             </HStack>
             <Box
-              w='256px'
+              w='13em'
               h='46px'
               border='3px'
               borderStyle='solid'

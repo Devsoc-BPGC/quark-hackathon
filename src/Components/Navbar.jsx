@@ -71,12 +71,12 @@ export const Navbar = () => {
               borderStyle='solid'
               borderColor='#EFF8FA'
               borderRadius='100px'
-              _hover={{ cursor: 'pointer', background: '#000' }}
+              _hover={{ cursor: 'pointer', background: 'blue' }}
             >
               <Button
                 backgroundColor='transparent'
                 variant='link'
-                _hover={{ cursor: 'pointer', color: '#000' }}
+                _hover={{ cursor: 'pointer', color: '' }}
               >
                 <Text
                   fontSize='1rem'
@@ -107,19 +107,19 @@ export const Navbar = () => {
             <Spacer maxW={'5vw'} minW={0} />
             <HStack spacing={'0.75rem'}>
               <Box
-                w={['170px', '200px']}
+                w={['180px', '220px']}
                 h={['30px', '37px']}
                 border='3px'
                 borderStyle='solid'
                 borderColor='#EFF8FA'
                 borderRadius='100px'
-                _hover={{ cursor: 'pointer', background: '#000' }}
+                _hover={{ cursor: 'pointer', background: 'blue' }}
               >
-                <Box mt='-0.1em'>
+                <Box mt={['-0.4em', '-0.14em']}>
                   <Button
                     backgroundColor='transparent'
                     variant='link'
-                    _hover={{ cursor: 'pointer', color: '#000' }}
+                    _hover={{ cursor: 'pointer', color: '' }}
                   >
                     <Text
                       fontWeight={'400'}

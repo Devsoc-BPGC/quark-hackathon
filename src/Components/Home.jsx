@@ -105,7 +105,7 @@ export const Home = () => {
           </Box>
           <Button
             w={['10em', '10em', '200px']}
-            h={['2em', '2em', '']}
+            h={['2em', '2em', '3em']}
             mt={['1em', '1em', '25px']}
             backgroundColor='#3770FF'
             colorScheme={'purple'}

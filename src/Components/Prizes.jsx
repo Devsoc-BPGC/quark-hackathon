@@ -12,9 +12,11 @@ const Prizes = () => {
       <Flex m={{ base: '1vw', md: '5vw' }}>
         <VStack alignItems={'center'}>
           <Text
+            m={['0.5em', '', '']}
+            mt={['0.5', '', '']}
             as={'h2'}
-            w={'85vw'}
-            fontSize={{ base: '1.8em', md: '3em' }}
+            w={['89vw', '85vw', '85vw']}
+            fontSize={['1.3em', '1.8em', '3em']}
             fontWeight={'700'}
             textAlign={{ base: 'left', md: 'right' }}
             mb={'5rem'}
@@ -34,7 +36,7 @@ const Prizes = () => {
             >
               <VStack alignItems={'flex-start'}>
                 <Text
-                  fontSize={{ base: '1.5em', md: '2em' }}
+                  fontSize={['1.1em', '1.5em', '2em']}
                   fontWeight='700'
                   color={'#EFF8FA'}
                 >
@@ -47,7 +49,7 @@ const Prizes = () => {
                   <Box>
                     <Text
                       textAlign={'left'}
-                      fontSize={{ base: '16px', md: '18px' }}
+                      fontSize={['0.7em', '16px', '18px']}
                       fontWeight='400'
                       w={{ base: '19.5em', md: '23em' }}
                       color={'#EFF8FA'}
@@ -64,7 +66,7 @@ const Prizes = () => {
                       w={{ base: '17.86px', md: '24px' }}
                     />
                     <Text
-                      fontSize={{ base: '14px', md: '24px' }}
+                      fontSize={['0.6em', '14px', '24px']}
                       fontWeight='700'
                       color={'#EFF8FA'}
                     >

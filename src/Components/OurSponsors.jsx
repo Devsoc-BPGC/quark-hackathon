@@ -29,18 +29,24 @@ const OurSponsors = () => {
   return (
     <Flex
       id='oursponsors'
-      h={['510px', '670px', '800px']}
+      h={['550px', '670px', '800px']}
       bg='#EFF8FA'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}
     >
-      <Box w='full'>
+      <Box mt='2em' w='full'>
         <Hide below='md'>
-          <Heading align='left' as='h2' mt='1em' ms='5em' fontSize={'1em'}>
+          <Heading
+            align='left'
+            as='h2'
+            mt='1em'
+            ms='5em'
+            fontSize={['1em', '1.2em', '1em']}
+          >
             Our sponsors
           </Heading>
-          <Box mt='-1em'>
-            <HStack mt='3em' ms='3.8em' gap={'3em'}>
+          <Box mt={'-1em'}>
+            <HStack mt={['-5em', '3em', '3em']} ms='3.8em' gap={'3em'}>
               <Box>
                 <Image src={facebook}></Image>
               </Box>

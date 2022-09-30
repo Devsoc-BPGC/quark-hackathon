@@ -74,7 +74,7 @@ const SponsorshipCTA = () => {
               <Button
                 w={['16em', '16em', '18em']}
                 h={['2.4em', '2.7em', '3em']}
-                _hover={{ bg: 'black' }}
+                _hover={{ bg: 'blue' }}
                 borderRadius='10em'
                 bg='#183249'
               >
@@ -441,7 +441,7 @@ const SponsorshipCTA = () => {
                 <Box mt='-1.3em' align='center' ms={['0em', '0em', '18.5em']}>
                   <TabList
                     w={['0em', 'fit-content', 'fit-content']}
-                    ms={['-17em', '1.5em', '0.3em']}
+                    ms={['-16.5em', '1.5em', '0.3em']}
                   >
                     <Tab
                       _active={{ background: 'transparent' }}

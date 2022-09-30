@@ -115,7 +115,7 @@ export const Navbar = () => {
                 borderRadius='100px'
                 _hover={{ cursor: 'pointer', background: 'blue' }}
               >
-                <Box mt={['-0.4em', '-0.14em']}>
+                <Box mt={['-0.35em', '-0.14em']}>
                   <Button
                     backgroundColor='transparent'
                     variant='link'

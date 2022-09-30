@@ -107,15 +107,15 @@ export const Navbar = () => {
             <Spacer maxW={'5vw'} minW={0} />
             <HStack spacing={'0.75rem'}>
               <Box
-                w='170px'
-                h='30px'
+                w={['170px', '200px']}
+                h={['30px', '37px']}
                 border='3px'
                 borderStyle='solid'
                 borderColor='#EFF8FA'
                 borderRadius='100px'
                 _hover={{ cursor: 'pointer', background: '#000' }}
               >
-                <Box mt='-0.33em'>
+                <Box mt='-0.1em'>
                   <Button
                     backgroundColor='transparent'
                     variant='link'
@@ -123,7 +123,7 @@ export const Navbar = () => {
                   >
                     <Text
                       fontWeight={'400'}
-                      fontSize={['0.8rem', '0.8rem', '1rem']}
+                      fontSize={['0.8rem', '1rem', '1rem']}
                       color='#EFF8FA'
                     >
                       Interested in sponsoring?

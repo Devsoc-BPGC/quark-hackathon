@@ -65,18 +65,18 @@ export const Navbar = () => {
               </Button>
             </HStack>
             <Box
-              w='256px'
+              w='13em'
               h='46px'
               border='3px'
               borderStyle='solid'
               borderColor='#EFF8FA'
               borderRadius='100px'
-              _hover={{ cursor: 'pointer', background: '#000' }}
+              _hover={{ cursor: 'pointer', background: 'blue' }}
             >
               <Button
                 backgroundColor='transparent'
                 variant='link'
-                _hover={{ cursor: 'pointer', color: '#000' }}
+                _hover={{ cursor: 'pointer', color: '' }}
               >
                 <Text
                   fontSize='1rem'
@@ -101,29 +101,35 @@ export const Navbar = () => {
           w='100vw'
         >
           <HStack justifyContent={'space-around'}>
-            <Box display={{ base: 'flex', lg: 'none' }}>
+            <Box ms='1em' display={{ base: 'flex', lg: 'none' }}>
               <Image w='40px' h='40px' src={asset}></Image>
             </Box>
             <Spacer maxW={'5vw'} minW={0} />
             <HStack spacing={'0.75rem'}>
               <Box
-                w='200px'
-                h='40px'
+                w={['180px', '220px']}
+                h={['30px', '37px']}
                 border='3px'
                 borderStyle='solid'
                 borderColor='#EFF8FA'
                 borderRadius='100px'
-                _hover={{ cursor: 'pointer', background: '#000' }}
+                _hover={{ cursor: 'pointer', background: 'blue' }}
               >
-                <Button
-                  backgroundColor='transparent'
-                  variant='link'
-                  _hover={{ cursor: 'pointer', color: '#000' }}
-                >
-                  <Text fontSize='1rem' mt='0.2em' color='#EFF8FA'>
-                    Interested in sponsoring?
-                  </Text>
-                </Button>
+                <Box mt={['-0.3em', '-0.14em']}>
+                  <Button
+                    backgroundColor='transparent'
+                    variant='link'
+                    _hover={{ cursor: 'pointer', color: '' }}
+                  >
+                    <Text
+                      fontWeight={'400'}
+                      fontSize={['0.8rem', '1rem', '1rem']}
+                      color='#EFF8FA'
+                    >
+                      Interested in sponsoring?
+                    </Text>
+                  </Button>
+                </Box>
               </Box>
               <Box>
                 <IconButton
@@ -139,7 +145,7 @@ export const Navbar = () => {
                         transitionDuration={'0.8s'}
                       />
                     ) : (
-                      <HamburgerIcon boxSize={8} transitionDuration={'0.8s'} />
+                      <HamburgerIcon boxSize={7} transitionDuration={'0.8s'} />
                     )
                   }
                   aria-label={'Open Menu'}
@@ -155,7 +161,7 @@ export const Navbar = () => {
         fontWeight={700}
         fontSize='20px'
         bg='blackAlpha.900'
-        height={'calc(100vh - 12rem)'}
+        height={'700px'}
         display={{ lg: 'none' }}
         pb={4}
         pr={8}
@@ -174,11 +180,13 @@ export const Navbar = () => {
         >
           <VStack alignItems={'center'} as={'nav'} spacing={4}>
             {Links.map(link => (
-              <Button variant='link' key={link.text} href={link.link}>
-                <Text fontSize='1.8rem' color='#EFF8FA'>
-                  {link.text}
-                </Text>
-              </Button>
+              <Box mt='2.5em'>
+                <Button variant='link' key={link.text} href={link.link}>
+                  <Text fontSize='1rem' color='#EFF8FA'>
+                    {link.text}
+                  </Text>
+                </Button>
+              </Box>
             ))}
           </VStack>
         </Flex>

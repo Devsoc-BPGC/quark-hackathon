@@ -28,7 +28,13 @@ export const Navbar = () => {
     { text: 'Sponsors', link: '#sponsorshipcta' },
   ];
   return (
-    <Flex bg='#183249' zIndex={99} top={0} overflowX={'clip'} position='sticky'>
+    <Flex
+      bg='#183249'
+      zIndex={99}
+      top={0}
+      overflowX={'clip'}
+      position={'sticky'}
+    >
       <Box w='100%' mt='0.78em'>
         <Flex
           wrap='wrap'
@@ -71,12 +77,13 @@ export const Navbar = () => {
               borderStyle='solid'
               borderColor='#EFF8FA'
               borderRadius='100px'
-              _hover={{ cursor: 'pointer', background: 'blue' }}
+              _hover={{ cursor: 'pointer', bgColor: 'blue.700' }}
+              textAlign={'center'}
             >
               <Button
                 backgroundColor='transparent'
                 variant='link'
-                _hover={{ cursor: 'pointer', color: '' }}
+                _hover={{ cursor: 'pointer' }}
               >
                 <Text
                   fontSize='1rem'
@@ -113,15 +120,16 @@ export const Navbar = () => {
                 borderStyle='solid'
                 borderColor='#EFF8FA'
                 borderRadius='100px'
-                _hover={{ cursor: 'pointer', background: 'blue' }}
+                _hover={{ cursor: 'pointer', bgColor: 'blue.700' }}
               >
-                <Box mt={['-0.3em', '-0.14em']}>
+                <Box mt={['-0.3em', '-0.14em']} textAlign={'center'}>
                   <Button
                     backgroundColor='transparent'
                     variant='link'
                     _hover={{ cursor: 'pointer', color: '' }}
                   >
                     <Text
+                      lineHeight={'30px'}
                       fontWeight={'400'}
                       fontSize={['0.8rem', '1rem', '1rem']}
                       color='#EFF8FA'

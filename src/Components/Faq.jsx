@@ -80,12 +80,18 @@ const Faq = () => {
         <Text align={'left'} ml={'8vw'} color={'#31433F'} mb={'2.8rem'}>
           Frequently asked questions
         </Text>
-        <HStack w='100%' justifyContent={'space-around'} mb={0}>
+        <Flex
+          direction={{ base: 'column', md: 'row' }}
+          w='100%'
+          justifyContent={'space-around'}
+          alignItems={'center'}
+          mb={0}
+        >
           <VStack align={'flex-start'} spacing='40px'>
             <Accordion defaultIndex={0} allowToggle>
               {FAQarr1.map(QnA => {
                 return (
-                  <AccordionItem w='35vw' mb={'1rem'}>
+                  <AccordionItem w={{ base: '80vw', md: '35vw' }} mb={'1rem'}>
                     <AccordionButton>
                       <Box flex='1' textAlign='left'>
                         <Text
@@ -117,7 +123,7 @@ const Faq = () => {
             <Accordion defaultIndex={0} allowToggle>
               {FAQarr2.map(QnA => {
                 return (
-                  <AccordionItem w='35vw' mb={'1rem'}>
+                  <AccordionItem w={{ base: '80vw', md: '35vw' }} mb={'1rem'}>
                     <AccordionButton>
                       <Box flex='1' textAlign='left'>
                         <Text
@@ -145,7 +151,7 @@ const Faq = () => {
               })}
             </Accordion>
           </VStack>
-        </HStack>
+        </Flex>
       </VStack>
       <Flex
         h='500px'

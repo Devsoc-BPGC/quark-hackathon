@@ -9,15 +9,17 @@ import Faq from './Components/Faq';
 import Prizes from './Components/Prizes';
 import OurSponsors from './Components/OurSponsors';
 import SponsorshipCTA from './Components/Sponsorshipcta';
-
+import EventsAndUpdates from './Components/EventsAndUpdates';
 function App() {
   return (
     <ChakraProvider theme={theme}>
+      <Navbar />
+
       <Box textAlign='center' fontSize='xl' overflowX={'hidden'}>
-        <Navbar />
         <Home />
         <About />
         <Stats />
+        <EventsAndUpdates />
         <Prizes />
         <SponsorshipCTA />
         <OurSponsors />

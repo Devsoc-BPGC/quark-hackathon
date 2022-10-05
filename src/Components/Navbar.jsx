@@ -10,6 +10,7 @@ import {
   useDisclosure,
   IconButton,
   VStack,
+  Link,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import insta from './assets/icons/instagram.png';
@@ -52,23 +53,31 @@ export const Navbar = () => {
           >
             {Links.map(link => {
               return (
-                <Button variant='link' key={link.text}>
-                  <Text fontSize='1.12rem' color='#EFF8FA' fontWeight={'400'}>
-                    {link.text}
-                  </Text>
-                </Button>
+                <Link href={link.link}>
+                  <Button variant='link' key={link.text}>
+                    <Text fontSize='1.12rem' color='#EFF8FA' fontWeight={'400'}>
+                      {link.text}
+                    </Text>
+                  </Button>
+                </Link>
               );
             })}
             <HStack spacing={'1rem'} display={{ base: 'none', lg: 'flex' }}>
-              <Button variant='link'>
-                <Image src={facebook} />
-              </Button>
-              <Button variant='link'>
-                <Image src={twitter} />
-              </Button>
-              <Button variant='link'>
-                <Image src={insta} />
-              </Button>
+              <Link href='https://www.facebook.com/bitsquark/'>
+                <Button variant='link'>
+                  <Image src={facebook} />
+                </Button>
+              </Link>
+              <Link href='https://twitter.com/bitsquark?lang=en'>
+                <Button variant='link'>
+                  <Image src={twitter} />
+                </Button>
+              </Link>
+              <Link href='https://www.instagram.com/bitsquark/?hl=en'>
+                <Button variant='link'>
+                  <Image src={insta} />
+                </Button>
+              </Link>
             </HStack>
             <Box
               w='16em'
@@ -189,11 +198,13 @@ export const Navbar = () => {
           <VStack alignItems={'center'} as={'nav'} spacing={4}>
             {Links.map(link => (
               <Box mt='2.5em'>
-                <Button variant='link' key={link.text} href={link.link}>
-                  <Text fontSize='1rem' color='#EFF8FA'>
-                    {link.text}
-                  </Text>
-                </Button>
+                <Link href={link.link}>
+                  <Button variant='link' key={link.text} href={link.link}>
+                    <Text fontSize='1rem' color='#EFF8FA'>
+                      {link.text}
+                    </Text>
+                  </Button>
+                </Link>
               </Box>
             ))}
           </VStack>

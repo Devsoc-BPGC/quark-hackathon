@@ -68,6 +68,8 @@ const Faq = () => {
       A: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aut sunt eveniet temporibus quasi! A, ex, ea corporis ipsa nisi dolorem voluptas qui illum sed esse omnis officia repellendus ab?',
     },
   ];
+
+  const FAQarr3 = [...FAQarr1, ...FAQarr2];
   return (
     <Flex
       id='faq'
@@ -81,7 +83,48 @@ const Faq = () => {
           Frequently asked questions
         </Text>
         <Flex
-          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'flex', md: 'none' }}
+          direction={'column'}
+          w='100%'
+          justifyContent={'space-around'}
+          alignItems={'center'}
+          mb={0}
+        >
+          <VStack align={'flex-start'} spacing='40px'>
+            <Accordion defaultIndex={0} allowToggle>
+              {FAQarr3.map(QnA => {
+                return (
+                  <AccordionItem w={{ base: '80vw', md: '35vw' }} mb={'1rem'}>
+                    <AccordionButton>
+                      <Box flex='1' textAlign='left'>
+                        <Text
+                          fontSize={'16px'}
+                          fontWeight={'700'}
+                          lineHeight='24.2px'
+                          color={'#183249'}
+                        >
+                          {QnA.Q}
+                        </Text>
+                      </Box>
+                      <AccordionIcon color={'#009DD9'} />
+                    </AccordionButton>
+                    <AccordionPanel textAlign='left' pb={4}>
+                      <Text
+                        fontWeight={'400'}
+                        fontSize={'16px'}
+                        color={'#183249'}
+                      >
+                        {QnA.A}
+                      </Text>
+                    </AccordionPanel>
+                  </AccordionItem>
+                );
+              })}
+            </Accordion>
+          </VStack>
+        </Flex>
+        <Flex
+          display={{ base: 'none', md: 'flex' }}
           w='100%'
           justifyContent={'space-around'}
           alignItems={'center'}
@@ -250,13 +293,13 @@ const Faq = () => {
             <InputRightElement w={'50px'} h={'46px'}>
               <Button
                 borderRadius={'50%'}
-                w={{ base: '42px', md: '46px' }}
-                h={{ base: '42px', md: '46px' }}
+                w={{ base: '40px', md: '46px' }}
+                h={{ base: '40px', md: '46px' }}
                 p={0}
               >
                 <Image
-                  h={{ base: '42px', md: '46px' }}
-                  w={{ base: '42px', md: '46px' }}
+                  h={{ base: '40px', md: '46px' }}
+                  w={{ base: '40px', md: '46px' }}
                   src={buttonIcon}
                   mb={{ base: '0.2em', md: '0.01em' }}
                 />

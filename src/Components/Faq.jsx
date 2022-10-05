@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Flex,
+  Link,
   Text,
   Image,
   HStack,
@@ -195,18 +196,26 @@ const Faq = () => {
             </Text>
           </HStack>
           <HStack gap={'2rem'}>
-            <Button variant={'link'}>
-              <Image src={mailIcon} h='20px' w='24px'></Image>
-            </Button>
-            <Button variant={'link'}>
-              <Image src={facebook} h='21px' w='21px'></Image>
-            </Button>
-            <Button variant={'link'}>
-              <Image src={twitter} h='21px' w='21px'></Image>
-            </Button>
-            <Button variant={'link'}>
-              <Image src={insta} h='22px' w='22px'></Image>
-            </Button>
+            <Link href='https://www.facebook.com/bitsquark/'>
+              <Button variant={'link'}>
+                <Image src={facebook} h='21px' w='21px'></Image>
+              </Button>
+            </Link>
+            <Link>
+              <Button variant={'link'}>
+                <Image src={mailIcon} h='20px' w='24px'></Image>
+              </Button>
+            </Link>
+            <Link href='https://twitter.com/bitsquark?lang=en'>
+              <Button variant={'link'}>
+                <Image src={twitter} h='21px' w='21px'></Image>
+              </Button>
+            </Link>
+            <Link href='https://www.instagram.com/bitsquark/?hl=en'>
+              <Button variant={'link'}>
+                <Image src={insta} h='22px' w='22px'></Image>
+              </Button>
+            </Link>
           </HStack>
           <InputGroup
             w={{ base: '299px', md: '658px' }}

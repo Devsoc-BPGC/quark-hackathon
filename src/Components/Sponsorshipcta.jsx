@@ -6,7 +6,6 @@ import {
   Heading,
   Text,
   Button,
-  Link,
   Tabs,
   TabList,
   TabPanels,
@@ -14,7 +13,9 @@ import {
   TabPanel,
 } from '@chakra-ui/react';
 import girl from './assets/icons/girldraw.svg';
-import sponsorLogo from './assets/icons/sponsorSlider.svg';
+import mahindra from './assets/icons/Mahindra.svg';
+import sabre from './assets/icons/sabre.svg';
+import technobytes from './assets/icons/technobytes.png';
 
 const SponsorshipCTA = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -102,7 +103,7 @@ const SponsorshipCTA = () => {
             <Box w='fit-content'>
               <Heading
                 as='h2'
-                fontWeight={['620', '620', '600']}
+                fontWeight={['700', '700', '700']}
                 mt={['5em', '5em', '0em']}
                 fontSize={['0.85em', '0.85em', '1em']}
                 ms={['0.8em', '2.2em', '4.3em']}
@@ -115,14 +116,19 @@ const SponsorshipCTA = () => {
               ms={['-0.99em', '-0.7em', '1em']}
               mt={['5.5em', '5.5em', '2em']}
             >
-              <Tabs index={tabIndex} onChange={handleTabsChange}>
+              <Tabs
+                variant='soft-rounded'
+                colorScheme='black'
+                index={tabIndex}
+                onChange={handleTabsChange}
+              >
                 <TabPanels>
                   <TabPanel>
                     <Image
-                      mt={['-4.5em', '-4.5em', '1em']}
-                      ms={['2em', '2em', '7em']}
-                      w={['6em', '6em', '11em']}
-                      src={sponsorLogo}
+                      mt={['-5em', '-4.5em', '1em']}
+                      ms={['0.7em', '2em', '7em']}
+                      w={['7em', '8em', '11em']}
+                      src={mahindra}
                     ></Image>
                     <Box
                       h={['14em', '15em', '9em']}
@@ -130,8 +136,9 @@ const SponsorshipCTA = () => {
                       bg='white'
                       w={['15.5em', '18em', '36em']}
                       mt={['1.5em', '1.5em', '-7em']}
-                      ms={['1.5em', '1.5em', '25em']}
-                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                      ms={['1em', '3em', '25em']}
+                      boxShadow={'-9px 10px 0px rgba(44, 135, 161, 0.6)'}
+                      borderRadius={'8px'}
                     >
                       <Text
                         ms={['0.8em', '0.8em', '2em']}
@@ -141,37 +148,30 @@ const SponsorshipCTA = () => {
                         fontSize={'0.75em'}
                         fontWeight='500'
                       >
-                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
-                        et nisl molestie, laoreet lobortis erat molestie. Sed
-                        sapien tortor, interdum ut magna vitae, finibus
-                        fermentum mauris. Donec aliquet massa ac quam
-                        consectetur, nec porttitor justo herndrerierte.”
+                        "We have participated in Quark since the past 2
+                        consecutive years. The innovative ideas they come up
+                        with for various workshops and competitions is extremely
+                        enlightening. There was an ample opportunity to share
+                        information about Scorpio."
                       </Text>
-                      <Link
-                        ms={['0.8em', '0.8em', '2em']}
-                        mt='7em'
-                        color='#009DD9'
-                        fontSize={'0.75em'}
-                      >
-                        Sponsor provided link {'>'}
-                      </Link>
                     </Box>
                   </TabPanel>
                   <TabPanel>
                     <Image
-                      mt={['-4.5em', '-4.5em', '1em']}
-                      ms={['2em', '2em', '7em']}
-                      w={['6em', '6em', '11em']}
-                      src={sponsorLogo}
+                      mt={['-5em', '-4.5em', '1em']}
+                      ms={['0.7em', '2em', '7em']}
+                      w={['7em', '8em', '11em']}
+                      src={sabre}
                     ></Image>
                     <Box
                       h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
                       w={['15.5em', '18em', '36em']}
-                      mt={['1.5em', '1.5em', '-7em']}
-                      ms={['1.5em', '1.5em', '25em']}
-                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                      mt={['0.8em', '0.3em', '-8.1em']}
+                      ms={['1em', '3em', '25em']}
+                      boxShadow={'-9px 10px 0px rgba(44, 135, 161, 0.6)'}
+                      borderRadius={'8px'}
                     >
                       <Text
                         ms={['0.8em', '0.8em', '2em']}
@@ -181,37 +181,27 @@ const SponsorshipCTA = () => {
                         fontSize={'0.75em'}
                         fontWeight='500'
                       >
-                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
-                        et nisl molestie, laoreet lobortis erat molestie. Sed
-                        sapien tortor, interdum ut magna vitae, finibus
-                        fermentum mauris. Donec aliquet massa ac quam
-                        consectetur, nec porttitor justo herndrerierte.”
+                        "Quark gave us a huge platform to implement our
+                        campaigns and expand our marketing horizon."
                       </Text>
-                      <Link
-                        ms={['0.8em', '0.8em', '2em']}
-                        mt='7em'
-                        color='#009DD9'
-                        fontSize={'0.75em'}
-                      >
-                        Sponsor provided link {'>'}
-                      </Link>
                     </Box>
                   </TabPanel>
                   <TabPanel>
                     <Image
-                      mt={['-4.5em', '-4.5em', '1em']}
-                      ms={['2em', '2em', '7em']}
-                      w={['6em', '6em', '11em']}
-                      src={sponsorLogo}
+                      mt={['-4.3em', '-4em', '1em']}
+                      ms={['0.7em', '2em', '7em']}
+                      w={['11em', '13.5em', '16.3em']}
+                      src={technobytes}
                     ></Image>
                     <Box
                       h={['14em', '15em', '9em']}
                       align='left'
                       bg='white'
                       w={['15.5em', '18em', '36em']}
-                      mt={['1.5em', '1.5em', '-7em']}
-                      ms={['1.5em', '1.5em', '25em']}
-                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
+                      mt={['1.7em', '1.5em', '-5.35em']}
+                      ms={['1em', '3em', '25em']}
+                      boxShadow={'-9px 10px 0px rgba(44, 135, 161, 0.6)'}
+                      borderRadius={'8px'}
                     >
                       <Text
                         ms={['0.8em', '0.8em', '2em']}
@@ -221,284 +211,31 @@ const SponsorshipCTA = () => {
                         fontSize={'0.75em'}
                         fontWeight='500'
                       >
-                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
-                        et nisl molestie, laoreet lobortis erat molestie. Sed
-                        sapien tortor, interdum ut magna vitae, finibus
-                        fermentum mauris. Donec aliquet massa ac quam
-                        consectetur, nec porttitor justo herndrerierte.”
+                        "BITS Goa gave us an opportunity to organise workshops
+                        for the students. Their generosity and hospitality are
+                        the reason why we would like to be a part of quark once
+                        again."
                       </Text>
-                      <Link
-                        ms={['0.8em', '0.8em', '2em']}
-                        mt='7em'
-                        color='#009DD9'
-                        fontSize={'0.75em'}
-                      >
-                        Sponsor provided link {'>'}
-                      </Link>
-                    </Box>
-                  </TabPanel>
-                  <TabPanel>
-                    <Image
-                      mt={['-4.5em', '-4.5em', '1em']}
-                      ms={['2em', '2em', '7em']}
-                      w={['6em', '6em', '11em']}
-                      src={sponsorLogo}
-                    ></Image>
-                    <Box
-                      h={['14em', '15em', '9em']}
-                      align='left'
-                      bg='white'
-                      w={['15.5em', '18em', '36em']}
-                      mt={['1.5em', '1.5em', '-7em']}
-                      ms={['1.5em', '1.5em', '25em']}
-                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
-                    >
-                      <Text
-                        ms={['0.8em', '0.8em', '2em']}
-                        pt='2.4em'
-                        pe={['0em', '0em', '2em']}
-                        pb='1em'
-                        fontSize={'0.75em'}
-                        fontWeight='500'
-                      >
-                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
-                        et nisl molestie, laoreet lobortis erat molestie. Sed
-                        sapien tortor, interdum ut magna vitae, finibus
-                        fermentum mauris. Donec aliquet massa ac quam
-                        consectetur, nec porttitor justo herndrerierte.”
-                      </Text>
-                      <Link
-                        ms={['0.8em', '0.8em', '2em']}
-                        mt='7em'
-                        color='#009DD9'
-                        fontSize={'0.75em'}
-                      >
-                        Sponsor provided link {'>'}
-                      </Link>
-                    </Box>
-                  </TabPanel>
-                  <TabPanel>
-                    <Image
-                      mt={['-4.5em', '-4.5em', '1em']}
-                      ms={['2em', '2em', '7em']}
-                      w={['6em', '6em', '11em']}
-                      src={sponsorLogo}
-                    ></Image>
-                    <Box
-                      h={['14em', '15em', '9em']}
-                      align='left'
-                      bg='white'
-                      w={['15.5em', '18em', '36em']}
-                      mt={['1.5em', '1.5em', '-7em']}
-                      ms={['1.5em', '1.5em', '25em']}
-                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
-                    >
-                      <Text
-                        ms={['0.8em', '0.8em', '2em']}
-                        pt='2.4em'
-                        pe={['0em', '0em', '2em']}
-                        pb='1em'
-                        fontSize={'0.75em'}
-                        fontWeight='500'
-                      >
-                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
-                        et nisl molestie, laoreet lobortis erat molestie. Sed
-                        sapien tortor, interdum ut magna vitae, finibus
-                        fermentum mauris. Donec aliquet massa ac quam
-                        consectetur, nec porttitor justo herndrerierte.”
-                      </Text>
-                      <Link
-                        ms={['0.8em', '0.8em', '2em']}
-                        mt='7em'
-                        color='#009DD9'
-                        fontSize={'0.75em'}
-                      >
-                        Sponsor provided link {'>'}
-                      </Link>
-                    </Box>
-                  </TabPanel>
-                  <TabPanel>
-                    <Image
-                      mt={['-4.5em', '-4.5em', '1em']}
-                      ms={['2em', '2em', '7em']}
-                      w={['6em', '6em', '11em']}
-                      src={sponsorLogo}
-                    ></Image>
-                    <Box
-                      h={['14em', '15em', '9em']}
-                      align='left'
-                      bg='white'
-                      w={['15.5em', '18em', '36em']}
-                      mt={['1.5em', '1.5em', '-7em']}
-                      ms={['1.5em', '1.5em', '25em']}
-                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
-                    >
-                      <Text
-                        ms={['0.8em', '0.8em', '2em']}
-                        pt='2.4em'
-                        pe={['0em', '0em', '2em']}
-                        pb='1em'
-                        fontSize={'0.75em'}
-                        fontWeight='500'
-                      >
-                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
-                        et nisl molestie, laoreet lobortis erat molestie. Sed
-                        sapien tortor, interdum ut magna vitae, finibus
-                        fermentum mauris. Donec aliquet massa ac quam
-                        consectetur, nec porttitor justo herndrerierte.”
-                      </Text>
-                      <Link
-                        ms={['0.8em', '0.8em', '2em']}
-                        mt='7em'
-                        color='#009DD9'
-                        fontSize={'0.75em'}
-                      >
-                        Sponsor provided link {'>'}
-                      </Link>
-                    </Box>
-                  </TabPanel>
-                  <TabPanel>
-                    <Image
-                      mt={['-4.5em', '-4.5em', '1em']}
-                      ms={['2em', '2em', '7em']}
-                      w={['6em', '6em', '11em']}
-                      src={sponsorLogo}
-                    ></Image>
-                    <Box
-                      h={['14em', '15em', '9em']}
-                      align='left'
-                      bg='white'
-                      w={['15.5em', '18em', '36em']}
-                      mt={['1.5em', '1.5em', '-7em']}
-                      ms={['1.5em', '1.5em', '25em']}
-                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
-                    >
-                      <Text
-                        ms={['0.8em', '0.8em', '2em']}
-                        pt='2.4em'
-                        pe={['0em', '0em', '2em']}
-                        pb='1em'
-                        fontSize={'0.75em'}
-                        fontWeight='500'
-                      >
-                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
-                        et nisl molestie, laoreet lobortis erat molestie. Sed
-                        sapien tortor, interdum ut magna vitae, finibus
-                        fermentum mauris. Donec aliquet massa ac quam
-                        consectetur, nec porttitor justo herndrerierte.”
-                      </Text>
-                      <Link
-                        ms={['0.8em', '0.8em', '2em']}
-                        mt='7em'
-                        color='#009DD9'
-                        fontSize={'0.75em'}
-                      >
-                        Sponsor provided link {'>'}
-                      </Link>
-                    </Box>
-                  </TabPanel>
-                  <TabPanel>
-                    <Image
-                      mt={['-4.5em', '-4.5em', '1em']}
-                      ms={['2em', '2em', '7em']}
-                      w={['6em', '6em', '11em']}
-                      src={sponsorLogo}
-                    ></Image>
-                    <Box
-                      h={['14em', '15em', '9em']}
-                      align='left'
-                      bg='white'
-                      w={['15.5em', '18em', '36em']}
-                      mt={['1.5em', '1.5em', '-7em']}
-                      ms={['1.5em', '1.5em', '25em']}
-                      boxShadow='0px 20px 25px -5px #7ab4c5, 0px 20px 20px -5px #7ab4c5'
-                    >
-                      <Text
-                        ms={['0.8em', '0.8em', '2em']}
-                        pt='2.4em'
-                        pe={['0em', '0em', '2em']}
-                        pb='1em'
-                        fontSize={'0.75em'}
-                        fontWeight='500'
-                      >
-                        “Morbi eu sollicitudin sem. Suspendisse ultricies lacus
-                        et nisl molestie, laoreet lobortis erat molestie. Sed
-                        sapien tortor, interdum ut magna vitae, finibus
-                        fermentum mauris. Donec aliquet massa ac quam
-                        consectetur, nec porttitor justo herndrerierte.”
-                      </Text>
-                      <Link
-                        ms={['0.8em', '0.8em', '2em']}
-                        mt='7em'
-                        color='#009DD9'
-                        fontSize={'0.75em'}
-                      >
-                        Sponsor provided link {'>'}
-                      </Link>
                     </Box>
                   </TabPanel>
                 </TabPanels>
-                <Box mt='-1.3em' align='center' ms={['0em', '0em', '18.5em']}>
-                  <TabList
-                    w={['0em', 'fit-content', 'fit-content']}
-                    ms={['-16em', '1.5em', '0.3em']}
-                  >
+                <Box mt='1em' ms={['5em', '8em', '28em']}>
+                  <TabList ms={['0em', '0em', '5.5em']} gap={'2em'}>
                     <Tab
-                      _active={{ background: 'transparent' }}
-                      fontSize={'2em'}
-                      fontWeight='900'
-                    >
-                      .
-                    </Tab>
+                      w='3px'
+                      background={'blackAlpha.700'}
+                      _hover={{ background: 'black' }}
+                    ></Tab>
                     <Tab
-                      _active={{ background: 'transparent' }}
-                      fontSize={'2em'}
-                      fontWeight='900'
-                    >
-                      .
-                    </Tab>
+                      w='3px'
+                      background={'blackAlpha.700'}
+                      _hover={{ background: 'black' }}
+                    ></Tab>
                     <Tab
-                      _active={{ background: 'transparent' }}
-                      fontSize={'2em'}
-                      fontWeight='900'
-                    >
-                      .
-                    </Tab>
-                    <Tab
-                      _active={{ background: 'transparent' }}
-                      fontSize={'2em'}
-                      fontWeight='900'
-                    >
-                      .
-                    </Tab>
-                    <Tab
-                      _active={{ background: 'transparent' }}
-                      fontSize={'2em'}
-                      fontWeight='900'
-                    >
-                      .
-                    </Tab>
-                    <Tab
-                      _active={{ background: 'transparent' }}
-                      fontSize={'2em'}
-                      fontWeight='900'
-                    >
-                      .
-                    </Tab>
-                    <Tab
-                      _active={{ background: 'transparent' }}
-                      fontSize={'2em'}
-                      fontWeight='900'
-                    >
-                      .
-                    </Tab>
-                    <Tab
-                      _active={{ background: 'transparent' }}
-                      fontSize={'2em'}
-                      fontWeight='900'
-                    >
-                      .
-                    </Tab>
+                      w='3px'
+                      background={'blackAlpha.700'}
+                      _hover={{ background: 'black' }}
+                    ></Tab>
                   </TabList>
                 </Box>
               </Tabs>

@@ -8,7 +8,7 @@ const Stats = () => {
   return (
     <Flex
       id='stats'
-      h={['850px', '980px', '840px']}
+      h={['850px', '980px', '860px']}
       bg='#C16E46'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}
@@ -25,7 +25,7 @@ const Stats = () => {
           fontWeight={['640', '640', '640']}
           fontSize={['1.6rem', '2.3rem', '3.8rem']}
         >
-          Hackathon 68.0 stats
+          Quark Hackathon stats
         </Heading>
         <Box h='6em'>
           <Grid
@@ -61,7 +61,7 @@ const Stats = () => {
                 fontSize={['1em', '1.3em', '2em']}
                 fontWeight={['648', '648', '650']}
               >
-                4,20,000<sup>+</sup>
+                42,000<sup>+</sup>
               </Text>
               <Text
                 color={'white'}
@@ -86,7 +86,7 @@ const Stats = () => {
                 fontSize={['1em', '1.3em', '2em']}
                 fontWeight={['648', '648', '650']}
               >
-                72,000<sup>+</sup>
+                7,200<sup>+</sup>
               </Text>
               <Text
                 color={'white'}
@@ -113,7 +113,7 @@ const Stats = () => {
                 fontSize={['0em', '0em', '2em']}
                 fontWeight='650'
               >
-                69<sup>+</sup>
+                100<sup>+</sup>
               </Text>
               <Text
                 color={'white'}
@@ -139,7 +139,7 @@ const Stats = () => {
           </Grid>
         </Box>
         <Image
-          mt={['18.5em', '22em', '3.28em']}
+          mt={['18.5em', '22em', '4.2em']}
           w='full'
           src={forest}
           h='fill'

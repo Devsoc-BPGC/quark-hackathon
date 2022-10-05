@@ -16,6 +16,7 @@ import {
 import React from 'react';
 import engineering from './assets/icons/engineering.svg';
 import Calendar from './assets/icons/Calendar.png';
+
 const EventsAndUpdates = () => {
   return (
     <Flex
@@ -37,7 +38,7 @@ const EventsAndUpdates = () => {
             <Box textAlign={'left'}>
               <Text
                 fontSize={{ base: '29px', md: '64px' }}
-                fontWeight={'900'}
+                fontWeight={'700'}
                 lineHeight={'70.9px'}
                 color={'#FFFFFF'}
               >
@@ -45,7 +46,7 @@ const EventsAndUpdates = () => {
               </Text>
               <Text
                 fontSize={{ base: '12px', md: '16px' }}
-                fontWeight={'700'}
+                fontWeight={'600'}
                 lineHeight={'30px'}
                 color={'#FFFFFF'}
               >

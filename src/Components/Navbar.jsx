@@ -71,7 +71,7 @@ export const Navbar = () => {
               </Button>
             </HStack>
             <Box
-              w='13em'
+              w='16em'
               h='46px'
               border='3px'
               borderStyle='solid'
@@ -89,7 +89,7 @@ export const Navbar = () => {
                   fontSize='1rem'
                   color='#EFF8FA'
                   fontWeight={'400'}
-                  mt='0.4em'
+                  mt='0.5em'
                   _hover={{ cursor: 'pointer' }}
                 >
                   Interested in sponsoring?

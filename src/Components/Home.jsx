@@ -1,8 +1,7 @@
 import React from 'react';
-import { Box, Flex, Text, Button, Image, Spacer } from '@chakra-ui/react';
+import { Box, Flex, Text, Image, Spacer } from '@chakra-ui/react';
 import asset from './assets/icons/Asset.png';
-import qclogo from './assets/icons/qclogo.svg';
-import devfolio from './assets/icons/Devfolio.png';
+import qclogo from './assets/SponsorLogos/qclogo.svg';
 import laptop from './assets/icons/Laptop.svg';
 import group30 from './assets/icons/Group30.svg';
 
@@ -23,11 +22,11 @@ export const Home = () => {
           justifyContent='left'
           textAlign='left'
           ml='8vw'
-          mt={['1.7em', '8vh', '12vh']}
+          mt={['1.7em', '8vh', '10vh']}
           shrink={2}
         >
           <Box display={{ base: 'none', lg: 'block' }}>
-            <Image w='90px' h='90px' src={asset}></Image>
+            <Image w='81px' h='81px' src={asset}></Image>
           </Box>
           <Box mb='25px'>
             <Text
@@ -37,94 +36,38 @@ export const Home = () => {
               fontSize={['1.6rem', '2.3rem', '4rem']}
               wordBreak='break-word'
             >
-              Generic Hackathon 69.0
+              Code by the Beach
             </Text>
             <Spacer h={{ base: '1.5rem', md: '0' }} />
             <Text
-              mt={['0.8em', '0.8em', '3em']}
+              mt={['-1.5em', '-0.8em', '2em']}
               fontSize={{ base: '0.75rem', md: '1rem' }}
               lineHeight='12px'
               color='#93E5C8'
               fontWeight='500'
             >
-              \\Dream Big.
-            </Text>
-            <Text
-              as='span'
-              fontSize={{ base: '0.75rem', md: '1rem' }}
-              lineHeight='24px'
-              color='#93E5C8'
-              fontWeight='500'
-            >
-              \\Do{' '}
-            </Text>
-            <Text
-              as='span'
-              display='inline-block'
-              fontSize={{ base: '1rem', md: '1.5rem' }}
-              color='#93E5C8'
-              fontWeight='500'
-            >
-              Bigger!
+              \\ A BITS Goa Initiative
             </Text>
           </Box>
-          <Box mb='10px'>
+          <Box mt={['0.5em', '1em', '1em']}>
             <Text
               fontSize={{ base: '0.77rem', md: '1rem' }}
               fontWeight='700'
               color='#FFFFFF'
             >
-              Hosted By
+              HOSTED BY
             </Text>
-            <Box>
+            <Box mt={['-1.4em', '-1.5em', '-4em']}>
               <Image
-                h={{ base: '43px', md: '56px' }}
-                w={{ base: '40px', md: '52px' }}
+                h={['10em', '12em', '17em']}
+                w={['12em', '14em', '18em']}
                 display='inline-block'
                 src={qclogo}
                 align='center'
                 verticalAlign='middle'
               />
-              <Text as='span' verticalAlign='middle'>
-                <Text
-                  as='span'
-                  fontSize={{ base: '1.5rem', md: '2.5rem' }}
-                  color='#FFFFFF'
-                >
-                  Quark
-                </Text>
-                <Text
-                  as='span'
-                  fontSize={{ base: '1.2rem', md: '2rem' }}
-                  color='#FFFFFF'
-                >
-                  Controls
-                </Text>
-              </Text>
             </Box>
           </Box>
-          <Button
-            w={['10em', '10em', '200px']}
-            h={['2em', '2em', '3em']}
-            mt={['1em', '1em', '25px']}
-            backgroundColor='#3770FF'
-            colorScheme={'purple'}
-          >
-            <Image
-              w='25px'
-              h='25px'
-              borderRadius={'3em'}
-              src={devfolio}
-              mr='2px'
-            ></Image>
-            <Text
-              as='span'
-              fontSize={{ base: '0.75rem', md: '1rem' }}
-              color='#FFFFFF'
-            >
-              Apply with Devfolio
-            </Text>
-          </Button>
         </Flex>
       </Flex>
       <Flex
@@ -140,7 +83,6 @@ export const Home = () => {
           h={{ md: '350px', lg: '600px' }}
           src={laptop}
           mt='2em'
-          // ms='2em'
         ></Image>
       </Flex>
       <Image

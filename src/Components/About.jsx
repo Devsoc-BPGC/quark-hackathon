@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Flex
       id='about'
-      h={['800px', '950px', '800px']}
+      h={['900px', '1060px', '800px']}
       bgGradient='linear(to-b, #2A4A62, #345F6C)'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}
@@ -23,7 +23,11 @@ const About = () => {
             fontWeight='620'
             fontSize={['1.6rem', '2.5rem', '3.5rem']}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Code by the Beach
+            <br />
+            A BITS Goa
+            <br />
+            Hackathon
           </Heading>
         </Box>
         <Box
@@ -37,15 +41,16 @@ const About = () => {
             fontSize={['0.9rem', '1rem', '1rem']}
             fontWeight='200'
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi
-            tincidunt ornare massa eget egestas.
+            In the context of a hackathon, the word "hack" is used to describe
+            how multiple technologies can be used together in a new and
+            innovative way. Teams of 3 to 4 people spend the weekend working on
+            innovative software and hardware solutions to real-world problems.
             <br />
             <br />
-            Sagittis orci a scelerisque purus semper. Gravida neque convallis a
-            cras semper auctor neque. Blandit cursus risus at ultrices. Magna
-            fermentum iaculis eu non diam phasellus vestibulum. Fermentum dui
-            faucibus in ornare quam.
+            These projects range in platform and application, including elements
+            of web development, mobile applications, drones, and more. However,
+            many times the most important aspect of a hackathon is the community
+            it generates and skills that inexperienced hackers walk away with.
           </Text>
         </Box>
       </Box>

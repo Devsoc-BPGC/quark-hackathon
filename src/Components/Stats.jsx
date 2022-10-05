@@ -139,7 +139,7 @@ const Stats = () => {
           </Grid>
         </Box>
         <Image
-          mt={['18.5em', '22em', '4.2em']}
+          mt={['18.5em', '22em', '4.26em']}
           w='full'
           src={forest}
           h='fill'

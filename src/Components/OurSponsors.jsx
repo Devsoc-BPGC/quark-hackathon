@@ -37,7 +37,7 @@ const OurSponsors = () => {
           >
             Our sponsors
           </Heading>
-          <Box mt={'-1em'}>
+          <Box mt={'-2em'}>
             <HStack mt={['-5em', '3em', '3em']} ms='3.8em' gap={'3em'}>
               <Box>
                 <Image src={edvoy}></Image>

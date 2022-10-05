@@ -6,7 +6,6 @@ import { Navbar } from './Components/Navbar';
 import About from './Components/About';
 import Stats from './Components/Stats';
 import Faq from './Components/Faq';
-import Prizes from './Components/Prizes';
 import OurSponsors from './Components/OurSponsors';
 import SponsorshipCTA from './Components/Sponsorshipcta';
 import EventsAndUpdates from './Components/EventsAndUpdates';
@@ -20,7 +19,6 @@ function App() {
         <About />
         <Stats />
         <EventsAndUpdates />
-        <Prizes />
         <SponsorshipCTA />
         <OurSponsors />
         <Faq />

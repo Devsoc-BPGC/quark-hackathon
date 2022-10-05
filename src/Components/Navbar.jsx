@@ -25,7 +25,6 @@ export const Navbar = () => {
     { text: 'About', link: '#about' },
     { text: 'Stats', link: '#stats' },
     { text: 'Events', link: '#events' },
-    { text: 'Prizes', link: '#prizes' },
     { text: 'Sponsors', link: '#sponsorshipcta' },
   ];
   return (

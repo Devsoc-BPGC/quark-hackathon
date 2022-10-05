@@ -22,6 +22,7 @@ const EventsAndUpdates = () => {
     <Flex
       bgGradient={'linear-gradient(180deg, #384257 0%, #2B4C63 98.96%);'}
       pb={'1rem'}
+      id='events'
     >
       <Flex
         justifyContent={'space-around'}

@@ -12,8 +12,7 @@ import EventsAndUpdates from './Components/EventsAndUpdates';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Navbar />
-
+      <Navbar overflowX={'hidden'} />
       <Box textAlign='center' fontSize='xl' overflowX={'hidden'}>
         <Home />
         <About />

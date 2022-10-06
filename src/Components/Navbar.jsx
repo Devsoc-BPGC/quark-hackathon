@@ -174,6 +174,7 @@ export const Navbar = () => {
         </Flex>
       </Box>
       <Box
+        overflowX={'hidden'}
         fontWeight={700}
         fontSize='20px'
         bg='blackAlpha.900'

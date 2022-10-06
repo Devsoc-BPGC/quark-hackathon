@@ -13,7 +13,6 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Navbar />
-
       <Box textAlign='center' fontSize='xl' overflowX={'hidden'}>
         <Home />
         <About />

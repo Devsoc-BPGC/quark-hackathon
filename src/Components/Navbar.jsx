@@ -28,7 +28,13 @@ export const Navbar = () => {
     { text: 'Sponsors', link: '#sponsorshipcta' },
   ];
   return (
-    <Flex bg='#183249' zIndex={99} top={0} overflowX={'clip'} position='sticky'>
+    <Flex
+      bg='#183249'
+      zIndex={99}
+      top={0}
+      overflowX={'clip'}
+      position={'sticky'}
+    >
       <Box w='100%' mt='0.78em'>
         <Flex
           wrap='wrap'

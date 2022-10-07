@@ -54,9 +54,9 @@ const About = () => {
           </Text>
         </Box>
       </Box>
-      <Box w='39em'>
+      <Box w='39em' mt={['2.2em', '1em', '0em']}>
         <Box
-          ms={['7.7em', '15em', '0.1em']}
+          ms={['7.7em', '14.5em', '0.1em']}
           mt={['-0.8em', '-0.8em', null]}
           boxSize={'fit-content'}
           zIndex={-2}
@@ -71,7 +71,7 @@ const About = () => {
         </Box>
         <Box
           mt={['-10.6em', '-10.6em', '-3.6em']}
-          ms={['-0.5em', '5em', '14.6em']}
+          ms={['-0.5em', '4.5em', '14.6em']}
           boxSize={'fit-content'}
           zIndex={-3}
         >
@@ -85,7 +85,7 @@ const About = () => {
         </Box>
         <Box
           mt={['0.8em', '0.8em', '-7em']}
-          ms={['3em', '9em', '7.5em']}
+          ms={['3em', '8.5em', '7.5em']}
           boxSize={'fit-content'}
         >
           <Image
@@ -97,7 +97,7 @@ const About = () => {
         </Box>
         <Box
           mt={['-7em', '-7.4em', '-7.3em']}
-          ms={['8em', '15.5em', '1em']}
+          ms={['8em', '15em', '1em']}
           zIndex={-1}
           boxSize={'fit-content'}
         >

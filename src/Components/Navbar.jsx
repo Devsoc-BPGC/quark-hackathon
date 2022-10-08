@@ -79,27 +79,25 @@ export const Navbar = () => {
               </Link>
             </HStack>
             <Box
-              w='16em'
-              h='46px'
+              w='fit-content'
+              h='fit-content'
               border='3px'
               borderStyle='solid'
               borderColor='#EFF8FA'
               borderRadius='100px'
-              _hover={{ cursor: 'pointer', bgColor: 'blue.700' }}
               textAlign={'center'}
             >
               <Button
-                backgroundColor='transparent'
-                variant='link'
-                _hover={{ cursor: 'pointer' }}
+                borderStyle='solid'
+                borderColor='#EFF8FA'
+                borderRadius='100px'
+                border='3px'
+                w='16em'
+                h='44px'
+                colorScheme='transparent'
+                _hover={{ background: 'blue.700' }}
               >
-                <Text
-                  fontSize='1rem'
-                  color='#EFF8FA'
-                  fontWeight={'400'}
-                  mt='0.5em'
-                  _hover={{ cursor: 'pointer' }}
-                >
+                <Text fontSize='1rem' color='#EFF8FA' fontWeight={'400'}>
                   Interested in sponsoring?
                 </Text>
               </Button>
@@ -122,30 +120,28 @@ export const Navbar = () => {
             <Spacer maxW={'5vw'} minW={0} />
             <HStack spacing={'0.75rem'}>
               <Box
-                w={['180px', '220px']}
-                h={['30px', '37px']}
+                w='fit-content'
+                h='fit-content'
                 border='3px'
                 borderStyle='solid'
                 borderColor='#EFF8FA'
                 borderRadius='100px'
-                _hover={{ cursor: 'pointer', bgColor: 'blue.700' }}
+                textAlign={'center'}
               >
-                <Box mt={['-0.3em', '-0.14em']} textAlign={'center'}>
-                  <Button
-                    backgroundColor='transparent'
-                    variant='link'
-                    _hover={{ cursor: 'pointer', color: '' }}
-                  >
-                    <Text
-                      lineHeight={'30px'}
-                      fontWeight={'400'}
-                      fontSize={['0.8rem', '1rem', '1rem']}
-                      color='#EFF8FA'
-                    >
-                      Interested in sponsoring?
-                    </Text>
-                  </Button>
-                </Box>
+                <Button
+                  borderStyle='solid'
+                  borderColor='#EFF8FA'
+                  borderRadius='100px'
+                  border='3px'
+                  w='15em'
+                  h='42px'
+                  colorScheme='transparent'
+                  _hover={{ background: 'blue.700' }}
+                >
+                  <Text fontSize='1rem' color='#EFF8FA' fontWeight={'400'}>
+                    Interested in sponsoring?
+                  </Text>
+                </Button>
               </Box>
               <Box>
                 <IconButton

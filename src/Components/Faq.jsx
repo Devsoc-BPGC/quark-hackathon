@@ -230,13 +230,13 @@ const Faq = () => {
             w={{ base: '320px', md: 'fit-content' }}
           >
             <Text _hover={{ cursor: 'pointer' }}>About the hackathon</Text>
-            <Text _hover={{ cursor: 'pointer' }}>
-              &#160;&#160;&#160;&#160;&#160;&#160;Open Source
-            </Text>
-            <Text _hover={{ cursor: 'pointer' }}>Privacy Policy</Text>
-            <Text _hover={{ cursor: 'pointer' }}>
-              &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Code of Conduct
-            </Text>
+            <Text _hover={{ cursor: 'pointer' }}>Open Source</Text>
+            <Link href='https://devfolio.co/privacy-policy'>
+              <Text _hover={{ cursor: 'pointer' }}>Privacy Policy</Text>
+            </Link>
+            <Link href='https://devfolio.co/code-of-conduct'>
+              <Text _hover={{ cursor: 'pointer' }}>Code of Conduct</Text>
+            </Link>
           </HStack>
           <HStack gap={'2rem'}>
             <Link href='https://www.facebook.com/bitsquark/'>

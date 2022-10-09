@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Flex
       id='about'
-      h={['900px', '1060px', '800px']}
+      h={['950px', '1060px', '800px']}
       bgGradient='linear(to-b, #2A4A62, #345F6C)'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}

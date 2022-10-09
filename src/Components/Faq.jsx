@@ -241,22 +241,43 @@ const Faq = () => {
           <HStack gap={'2rem'}>
             <Link href='https://www.facebook.com/bitsquark/'>
               <Button variant={'link'}>
-                <Image src={facebook} h='21px' w='21px'></Image>
+                <Image
+                  src={facebook}
+                  h='21px'
+                  w='21px'
+                  _hover={{ background: 'black' }}
+                ></Image>
               </Button>
             </Link>
             <Link>
               <Button variant={'link'}>
-                <Image src={mailIcon} h='20px' w='24px'></Image>
+                <Image
+                  src={mailIcon}
+                  h='20px'
+                  w='24px'
+                  _hover={{ background: 'black' }}
+                ></Image>
               </Button>
             </Link>
             <Link href='https://twitter.com/bitsquark?lang=en'>
               <Button variant={'link'}>
-                <Image src={twitter} h='21px' w='21px'></Image>
+                <Image
+                  src={twitter}
+                  h='21px'
+                  w='21px'
+                  _hover={{ background: 'black' }}
+                ></Image>
               </Button>
             </Link>
             <Link href='https://www.instagram.com/bitsquark/?hl=en'>
               <Button variant={'link'}>
-                <Image src={insta} h='22px' w='22px'></Image>
+                <Image
+                  src={insta}
+                  h='22px'
+                  w='22px'
+                  _hover={{ background: 'black' }}
+                  borderRadius='0.4em'
+                ></Image>
               </Button>
             </Link>
           </HStack>

@@ -64,17 +64,21 @@ export const Navbar = () => {
             <HStack spacing={'1rem'} display={{ base: 'none', lg: 'flex' }}>
               <Link href='https://www.facebook.com/bitsquark/'>
                 <Button variant='link'>
-                  <Image src={facebook} />
+                  <Image src={facebook} _hover={{ background: 'black' }} />
                 </Button>
               </Link>
               <Link href='https://twitter.com/bitsquark?lang=en'>
                 <Button variant='link'>
-                  <Image src={twitter} />
+                  <Image src={twitter} _hover={{ background: 'black' }} />
                 </Button>
               </Link>
               <Link href='https://www.instagram.com/bitsquark/?hl=en'>
                 <Button variant='link'>
-                  <Image src={insta} />
+                  <Image
+                    src={insta}
+                    _hover={{ background: 'black' }}
+                    borderRadius='0.4em'
+                  />
                 </Button>
               </Link>
             </HStack>

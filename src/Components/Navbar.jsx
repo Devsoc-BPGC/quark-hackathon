@@ -133,8 +133,8 @@ export const Navbar = () => {
                   borderColor='#EFF8FA'
                   borderRadius='100px'
                   border='3px'
-                  w='15em'
-                  h='42px'
+                  w={['12em', '15em']}
+                  h={['32px', '42px']}
                   colorScheme='transparent'
                   _hover={{ background: 'blue.700' }}
                 >

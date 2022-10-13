@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Flex, Heading, Text, Image, Grid } from '@chakra-ui/react';
 import duckTrain from './assets/icons/Group 27.png';
 import office from './assets/icons/Group 28.png';
-import forest from './assets/icons/Forest.svg';
 
 const Stats = () => {
   return (
@@ -138,12 +137,6 @@ const Stats = () => {
             </Box>
           </Grid>
         </Box>
-        <Image
-          mt={['18.5em', '22em', '4.26em']}
-          w='full'
-          src={forest}
-          h='fill'
-        ></Image>
       </Box>
     </Flex>
   );

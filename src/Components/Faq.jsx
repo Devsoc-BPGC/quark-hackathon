@@ -229,8 +229,12 @@ const Faq = () => {
             wrap={'wrap'}
             w={{ base: '320px', md: 'fit-content' }}
           >
-            <Text _hover={{ cursor: 'pointer' }}>About the hackathon</Text>
-            <Text _hover={{ cursor: 'pointer' }}>Open Source</Text>
+            <Link href=''>
+              <Text _hover={{ cursor: 'pointer' }}>About the hackathon</Text>
+            </Link>
+            <Link href=''>
+              <Text _hover={{ cursor: 'pointer' }}>Open Source</Text>
+            </Link>
             <Link href='https://devfolio.co/privacy-policy'>
               <Text _hover={{ cursor: 'pointer' }}>Privacy Policy</Text>
             </Link>

@@ -8,20 +8,18 @@ import {
   Show,
   Heading,
 } from '@chakra-ui/react';
-import edvoy from './assets/SponsorLogos/edvoy.svg';
-import unstop from './assets/SponsorLogos/unstop.svg';
-import robobox from './assets/SponsorLogos/robobox.svg';
-import codingninjas from './assets/SponsorLogos/codingninjas.svg';
-import groww from './assets/SponsorLogos/groww.svg';
-import brainwonders from './assets/SponsorLogos/brainwonders.svg';
-import asus from './assets/SponsorLogos/asus.svg';
-import mdsm from './assets/SponsorLogos/mdsm.svg';
+import group from './assets/SponsorLogos/group.png';
+import devfolio from './assets/SponsorLogos/Devfolio.png';
+import solana from './assets/SponsorLogos/Solana.png';
+import polygon from './assets/SponsorLogos/Polygon.png';
+import filecoin from './assets/SponsorLogos/Filecoin.png';
+import replit from './assets/SponsorLogos/Replit.png';
 
 const OurSponsors = () => {
   return (
     <Flex
       id='oursponsors'
-      h={['400px', '490px', '800px']}
+      h={['400px', '440px', '600px']}
       bg='#EFF8FA'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}
@@ -37,34 +35,27 @@ const OurSponsors = () => {
           >
             Our sponsors
           </Heading>
-          <Box mt={'-2em'}>
-            <HStack mt={['-5em', '3em', '3em']} ms='3.8em' gap={'3em'}>
-              <Box>
-                <Image src={edvoy}></Image>
+          <Box mt={'1em'}>
+            <HStack mt={['-5em', '3em', '3em']} ms='5em' me='5em' gap={'3em'}>
+              <Box w='20em'>
+                <Image src={devfolio}></Image>
               </Box>
-              <Box>
-                <Image src={unstop}></Image>
+              <Box w='20em'>
+                <Image src={solana}></Image>
               </Box>
-              <Box>
-                <Image src={robobox}></Image>
+              <Box w='20em'>
+                <Image src={polygon}></Image>
               </Box>
-              <Box>
-                <Image src={codingninjas}></Image>
-              </Box>
-            </HStack>
-            <HStack w='fit-content' ms='15em' mt='4em' gap='4em'>
-              <Box>
-                <Image src={groww}></Image>
-              </Box>
-              <Box>
-                <Image src={brainwonders}></Image>
+              <Box w='20em'>
+                <Image src={filecoin}></Image>
               </Box>
             </HStack>
-          </Box>
-          <Box>
-            <HStack w='fit-content' ms='30em' mt='4em' gap='4em'>
-              <Box>
-                <Image src={asus}></Image>
+            <HStack mt='4em'>
+              <Box
+                w={['', '', '8em', '15em']}
+                ms={['0em', '15em', '15em', '19em', '30em']}
+              >
+                <Image src={replit}></Image>
               </Box>
             </HStack>
           </Box>
@@ -73,8 +64,12 @@ const OurSponsors = () => {
           <Heading mt='2em' align='left' ms='2em' as='h2' fontSize={'0.8em'}>
             Our sponsors
           </Heading>
-          <Box ms={['0.1em', '1em', '1em']} mt={['3.7em', '5em', '5em']}>
-            <Image w={['99%', '95%', '95%']} h='fit-content' src={mdsm}></Image>
+          <Box ms={['0.1em', '1em', '1em']} mt={['3.7em', '5em', '-5em']}>
+            <Image
+              w={['99%', '95%', '95%']}
+              h='fit-content'
+              src={group}
+            ></Image>
           </Box>
         </Show>
       </Box>

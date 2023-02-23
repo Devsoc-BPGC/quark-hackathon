@@ -7,7 +7,7 @@ import About from './Components/About';
 import Stats from './Components/Stats';
 import Faq from './Components/Faq';
 import OurSponsors from './Components/OurSponsors';
-import SponsorshipCTA from './Components/Sponsorshipcta';
+// import SponsorshipCTA from './Components/Sponsorshipcta';
 import EventsAndUpdates from './Components/EventsAndUpdates';
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <About />
         <Stats />
         <EventsAndUpdates />
-        <SponsorshipCTA />
+        {/* <SponsorshipCTA /> */}
         <OurSponsors />
         <Faq />
         <Footer />

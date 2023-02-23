@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Flex, Text, Image, Spacer } from '@chakra-ui/react';
 import asset from './assets/icons/Asset.png';
 import qclogo from './assets/SponsorLogos/qclogo.svg';
@@ -6,6 +6,16 @@ import laptop from './assets/icons/Laptop.svg';
 import group30 from './assets/icons/Group30.svg';
 
 export const Home = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <Flex
       id='home'
@@ -67,6 +77,11 @@ export const Home = () => {
                 verticalAlign='middle'
               />
             </Box>
+            <div
+              class='apply-button'
+              data-hackathon-slug='code-by-the-beach'
+              data-button-theme='light'
+            ></div>
           </Box>
         </Flex>
       </Flex>

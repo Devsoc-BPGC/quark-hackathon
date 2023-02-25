@@ -5,10 +5,12 @@ import Footer from './Components/Footer';
 import { Navbar } from './Components/Navbar';
 import About from './Components/About';
 import Stats from './Components/Stats';
-import Faq from './Components/Faq';
-import OurSponsors from './Components/OurSponsors';
+// import Faq from './Components/Faq';
+// import OurSponsors from './Components/OurSponsors';
 // import SponsorshipCTA from './Components/Sponsorshipcta';
 import EventsAndUpdates from './Components/EventsAndUpdates';
+import './App.css';
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -19,8 +21,8 @@ function App() {
         <Stats />
         <EventsAndUpdates />
         {/* <SponsorshipCTA /> */}
-        <OurSponsors />
-        <Faq />
+        {/* <OurSponsors /> */}
+        {/* <Faq /> */}
         <Footer />
       </Box>
     </ChakraProvider>

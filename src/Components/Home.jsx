@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react';
 import { Box, Flex, Text, Image, Spacer } from '@chakra-ui/react';
 import asset from './assets/icons/Asset.png';
-import qclogo from './assets/SponsorLogos/qclogo.svg';
+import qcHome from './assets/SponsorLogos/qcHome.svg';
 import laptop from './assets/icons/Laptop.svg';
 import group30 from './assets/icons/Group30.svg';
+import devfolio from './assets/SponsorLogos/devfolio.svg';
+import polygon from './assets/SponsorLogos/polygon.svg';
+import replit from './assets/SponsorLogos/replit.svg';
+import solana from './assets/SponsorLogos/solana.svg';
+import filecoin from './assets/SponsorLogos/filecoin.svg';
 
 export const Home = () => {
   useEffect(() => {
@@ -19,7 +24,7 @@ export const Home = () => {
   return (
     <Flex
       id='home'
-      h={['700px', '800px', '800px']}
+      h={['920px', '1120px', '1000px']}
       bgGradient='linear(to-b, #183249, #344158, #2A4A62)'
       backgroundRepeat='no-repeat'
       direction={{ base: 'column', md: 'row' }}
@@ -36,7 +41,12 @@ export const Home = () => {
           shrink={2}
         >
           <Box display={{ base: 'none', lg: 'block' }}>
-            <Image w='81px' h='81px' src={asset}></Image>
+            <Image
+              className='unselectable'
+              w='81px'
+              h='81px'
+              src={asset}
+            ></Image>
           </Box>
           <Box mb='25px'>
             <Text
@@ -67,21 +77,92 @@ export const Home = () => {
             >
               HOSTED BY
             </Text>
-            <Box mt={['-1.4em', '-1.5em', '-4em']}>
+            <Box mt={['-1.4em', '-2.3em', '-4.4em']}>
               <Image
+                className='unselectable'
                 h={['10em', '12em', '17em']}
                 w={['12em', '14em', '18em']}
                 display='inline-block'
-                src={qclogo}
+                src={qcHome}
                 align='center'
                 verticalAlign='middle'
               />
             </Box>
             <div
-              class='apply-button'
+              className='apply-button'
               data-hackathon-slug='code-by-the-beach'
               data-button-theme='light'
             ></div>
+          </Box>
+          <Box mt={['0em', '0em', '0em']}>
+            <Text
+              fontSize={{ base: '0.77rem', md: '1rem' }}
+              fontWeight='700'
+              color='#FFFFFF'
+            >
+              POWERED BY
+            </Text>
+            <Box mt={['-1.4em', '-2em', '-4em']}>
+              <Image
+                className='unselectable'
+                h={['7em', '9em', '15em']}
+                w={['7em', '9em', '15em']}
+                display='inline-block'
+                src={devfolio}
+                align='center'
+                verticalAlign='middle'
+              />
+              <Image
+                ms={['0.5em', '2em', '3em']}
+                className='unselectable'
+                h={['7em', '9em', '15em']}
+                w={['7em', '9em', '15em']}
+                display='inline-block'
+                src={polygon}
+                align='center'
+                verticalAlign='middle'
+              />
+            </Box>
+          </Box>
+          <Box mt={['-1.2em', '-1.5em', '-3.2em']}>
+            <Text
+              fontSize={{ base: '0.77rem', md: '1rem' }}
+              fontWeight='700'
+              color='#FFFFFF'
+            >
+              HOSTING PARTNER
+            </Text>
+            <Box mt={['-0.5em', '-0.5em', '-2em']}>
+              <Image
+                className='unselectable'
+                h={['4em', '7em', '11em']}
+                w={['4em', '7em', '11em']}
+                display='inline-block'
+                src={replit}
+                align='center'
+                verticalAlign='middle'
+              />
+              <Image
+                ms={['1em', '2em', '3em']}
+                className='unselectable'
+                h={['1.5em', '2em', '3em']}
+                w={['1.5em', '2em', '3em']}
+                display='inline-block'
+                src={filecoin}
+                align='center'
+                verticalAlign='middle'
+              />
+              <Image
+                ms={['1em', '2em', '3em']}
+                className='unselectable'
+                h={['5em', '6em', '8em']}
+                w={['5em', '6em', '8em']}
+                display='inline-block'
+                src={solana}
+                align='center'
+                verticalAlign='middle'
+              />
+            </Box>
           </Box>
         </Flex>
       </Flex>
@@ -93,6 +174,7 @@ export const Home = () => {
         top={{ md: '9vh', lg: '12vh' }}
       >
         <Image
+          className='unselectable'
           display={{ base: 'none', md: 'block' }}
           w='100%'
           h={{ md: '350px', lg: '600px' }}
@@ -101,6 +183,7 @@ export const Home = () => {
         ></Image>
       </Flex>
       <Image
+        className='unselectable'
         mt='2em'
         display={{ base: 'block', md: 'none' }}
         w='100%'

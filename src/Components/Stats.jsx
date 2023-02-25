@@ -43,6 +43,7 @@ const Stats = () => {
               w={['23em', '23em', '18em']}
             >
               <Image
+                className='unselectable'
                 src={duckTrain}
                 h={['5.2em', '6em', '4.8em']}
                 w={['20em', '40em', '70em']}
@@ -130,6 +131,7 @@ const Stats = () => {
               mt={['12em', '15em', '1em']}
             >
               <Image
+                className='unselectable'
                 src={office}
                 h={['7em', '9em', '9em']}
                 w={['19.8em', '27.8em', '30em']}

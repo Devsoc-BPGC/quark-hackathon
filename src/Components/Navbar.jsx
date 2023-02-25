@@ -64,17 +64,26 @@ export const Navbar = () => {
             <HStack spacing={'1rem'} display={{ base: 'none', lg: 'flex' }}>
               <Link href='https://www.facebook.com/bitsquark/'>
                 <Button variant='link'>
-                  <Image src={facebook} _hover={{ background: 'black' }} />
+                  <Image
+                    className='unselectable'
+                    src={facebook}
+                    _hover={{ background: 'black' }}
+                  />
                 </Button>
               </Link>
               <Link href='https://twitter.com/bitsquark?lang=en'>
                 <Button variant='link'>
-                  <Image src={twitter} _hover={{ background: 'black' }} />
+                  <Image
+                    className='unselectable'
+                    src={twitter}
+                    _hover={{ background: 'black' }}
+                  />
                 </Button>
               </Link>
               <Link href='https://www.instagram.com/bitsquark/?hl=en'>
                 <Button variant='link'>
                   <Image
+                    className='unselectable'
                     src={insta}
                     _hover={{ background: 'black' }}
                     borderRadius='0.4em'
@@ -119,7 +128,12 @@ export const Navbar = () => {
         >
           <HStack justifyContent={'space-around'}>
             <Box ms='1em' display={{ base: 'flex', lg: 'none' }}>
-              <Image w='40px' h='40px' src={asset}></Image>
+              <Image
+                className='unselectable'
+                w='40px'
+                h='40px'
+                src={asset}
+              ></Image>
             </Box>
             <Spacer maxW={'5vw'} minW={0} />
             <HStack spacing={'0.75rem'}>

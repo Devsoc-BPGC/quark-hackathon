@@ -62,6 +62,7 @@ const About = () => {
           zIndex={-2}
         >
           <Image
+            className='unselectable'
             h={['12.8em', '13em', '22em']}
             w={['12.8em', '13em', '22em']}
             mt='0'
@@ -76,6 +77,7 @@ const About = () => {
           zIndex={-3}
         >
           <Image
+            className='unselectable'
             h={['7em', '8em', '10em']}
             w={['7em', '8em', '10em']}
             src={heli}
@@ -89,6 +91,7 @@ const About = () => {
           boxSize={'fit-content'}
         >
           <Image
+            className='unselectable'
             h={['5.7em', '5.9em', '8.5em']}
             w={['5.7em', '5.9em', '8.5em']}
             src={hackers}
@@ -102,6 +105,7 @@ const About = () => {
           boxSize={'fit-content'}
         >
           <Image
+            className='unselectable'
             h={['4em', '4.2em', '6.7em']}
             w={['4em', '4.2em', '6.7em']}
             src={vr}

@@ -192,7 +192,8 @@ export const Navbar = () => {
         fontWeight={700}
         fontSize='20px'
         bg='blackAlpha.900'
-        height={'700px'}
+        mt='0.3em'
+        height={'fit-content'}
         display={{ lg: 'none' }}
         pb={4}
         pr={8}

@@ -111,6 +111,7 @@ export const Home = () => {
                 src={devfolio}
                 align='center'
                 verticalAlign='middle'
+                pe='1em'
               />
               <Image
                 ms={['0.5em', '2em', '3em']}

@@ -189,7 +189,7 @@ const EventsAndUpdates = () => {
                     <HStack>
                       <Image className='unselectable' src={Calendar} />
                       <Text fontWeight={'400'} fontSize={'14px'}>
-                        February 11 - 13,2023
+                        March 24 - 26,2023
                       </Text>
                     </HStack>
                   </VStack>

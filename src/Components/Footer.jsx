@@ -6,7 +6,7 @@ const Footer = () => {
     <Box bg='#2B4C63 98.96%' p='1em' h='50px'>
       <Text color='#EFF8FA'>
         Made with ❤️ by{' '}
-        <Link href='https://devsoc.club' color={'blue'}>
+        <Link href='https://devsoc.club' color={'white'}>
           DevSoc
         </Link>
       </Text>

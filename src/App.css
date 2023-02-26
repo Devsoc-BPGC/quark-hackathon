@@ -1,0 +1,11 @@
+.unselectable {
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.apply-button {
+  margin-top: -3em;
+}

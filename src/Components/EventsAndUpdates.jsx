@@ -10,8 +10,6 @@ import {
   Tab,
   TabPanel,
   Box,
-  UnorderedList,
-  ListItem,
 } from '@chakra-ui/react';
 import React from 'react';
 import engineering from './assets/icons/engineering.svg';
@@ -22,6 +20,7 @@ const EventsAndUpdates = () => {
   return (
     <>
       <Image
+        className='unselectable'
         mt={['-4em', '-6.2em', '-13em']}
         w='full'
         src={forest}
@@ -68,6 +67,7 @@ const EventsAndUpdates = () => {
               gap={{ base: '1rem', md: '4.5rem' }}
             >
               <Image
+                className='unselectable'
                 src={engineering}
                 ml={{ base: '1.5rem', md: '0' }}
                 w={{ base: '281.16', md: '426px' }}
@@ -96,7 +96,7 @@ const EventsAndUpdates = () => {
           </VStack>
           <Tabs align='center' variant={'soft-rounded'}>
             <TabPanels>
-              <TabPanel>
+              {/* <TabPanel>
                 <Box
                   textAlign={'left'}
                   bgColor={'#EFF8FA'}
@@ -143,14 +143,14 @@ const EventsAndUpdates = () => {
                       </UnorderedList>
                     </VStack>
                     <HStack>
-                      <Image src={Calendar} />
+                      <Image className='unselectable' src={Calendar} />
                       <Text fontWeight={'400'} fontSize={'14px'}>
                         December 10 - 15,2022
                       </Text>
                     </HStack>
                   </VStack>
                 </Box>
-              </TabPanel>
+              </TabPanel> */}
               <TabPanel>
                 <Box
                   textAlign={'left'}
@@ -172,7 +172,7 @@ const EventsAndUpdates = () => {
                       fontSize={{ base: '16px', md: '18px' }}
                       mt={'3rem'}
                     >
-                      Round 2: Hackathon
+                      Hackathon
                     </Text>
                     <Text fontWeight={'400'} fontSize={'14px'}>
                       The hackathon is a 48 hour event consisting of talks, API
@@ -187,9 +187,9 @@ const EventsAndUpdates = () => {
                     </Text>
 
                     <HStack>
-                      <Image src={Calendar} />
+                      <Image className='unselectable' src={Calendar} />
                       <Text fontWeight={'400'} fontSize={'14px'}>
-                        February 11 - 13,2023
+                        March 24 - 26,2023
                       </Text>
                     </HStack>
                   </VStack>
@@ -197,7 +197,6 @@ const EventsAndUpdates = () => {
               </TabPanel>
             </TabPanels>
             <TabList>
-              <Tab w={'100px'} bgColor={'whiteAlpha.400'}></Tab>
               <Tab w={'100px'} bgColor={'whiteAlpha.400'}></Tab>
             </TabList>
           </Tabs>

@@ -215,6 +215,7 @@ const Faq = () => {
           clipPath='ellipse(2049px 70% at bottom center)'
         >
           <Image
+            className='unselectable'
             zIndex={1}
             src={robotGoose}
             alt='roboGoose'
@@ -246,6 +247,7 @@ const Faq = () => {
             <Link href='https://www.facebook.com/bitsquark/'>
               <Button variant={'link'}>
                 <Image
+                  className='unselectable'
                   src={facebook}
                   h='21px'
                   w='21px'
@@ -256,6 +258,7 @@ const Faq = () => {
             <Link>
               <Button variant={'link'}>
                 <Image
+                  className='unselectable'
                   src={mailIcon}
                   h='20px'
                   w='24px'
@@ -266,6 +269,7 @@ const Faq = () => {
             <Link href='https://twitter.com/bitsquark?lang=en'>
               <Button variant={'link'}>
                 <Image
+                  className='unselectable'
                   src={twitter}
                   h='21px'
                   w='21px'
@@ -276,6 +280,7 @@ const Faq = () => {
             <Link href='https://www.instagram.com/bitsquark/?hl=en'>
               <Button variant={'link'}>
                 <Image
+                  className='unselectable'
                   src={insta}
                   h='22px'
                   w='22px'
@@ -332,6 +337,7 @@ const Faq = () => {
                 p={0}
               >
                 <Image
+                  className='unselectable'
                   h={{ base: '40px', md: '46px' }}
                   w={{ base: '40px', md: '46px' }}
                   src={buttonIcon}

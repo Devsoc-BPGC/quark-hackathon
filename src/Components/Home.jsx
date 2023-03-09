@@ -92,6 +92,7 @@ export const Home = () => {
               className='apply-button'
               data-hackathon-slug='code-by-the-beach'
               data-button-theme='light'
+              style={{ height: '44px', width: '312px' }}
             ></div>
           </Box>
           <Box mt={['0em', '0em', '0em']}>
